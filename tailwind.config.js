@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#1B1B1E", 
+        primary: "#1B1B1E",
         gradient: "#AB2985"
       },
       keyframes: {

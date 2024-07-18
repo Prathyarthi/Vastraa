@@ -7,7 +7,7 @@ function Clients() {
             <div className="text-center py-7 font-semibold text-2xl">
                 <h1 className="text-[#1B1B1E]">Our Valuable Clients</h1>
             </div>
-            <div className="hidden lg:absolute lg:inset-0 lg:flex lg:justify-between lg:px-[200px]">
+            <div className="hidden lg:absolute lg:inset-0 lg:flex lg:justify-between lg:px-10">
                 <button className="">
                     <ChevronLeft size={40} />
                 </button>
@@ -16,7 +16,7 @@ function Clients() {
                 </button>
             </div>
 
-            <div className="flex overflow-hidden lg:space-x-64 group lg:mx-[250px]">
+            <div className="flex overflow-hidden lg:space-x-8 group lg:mx-[100px]">
                 <div className="flex lg:space-x-8 space-x-8 w-full lg:justify-center lg:items-center animate-scroll group-hover:paused">
                     <ul className="text-xl font-semibold flex items-center lg:justify-center bg-[#F9F8F8] text-[#3D3D3D] h-[48px] w-[174px] rounded-lg p-5 space-x-2">
                         <li>Valley</li>
