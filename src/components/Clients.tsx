@@ -27,7 +27,7 @@ function Clients() {
                     <ul className="text-xl font-semibold flex items-center lg:justify-center bg-[#1769FF] text-[#FFCC33] h-[48px] lg:min-w-[174px] rounded-lg p-5 whitespace-nowrap">Euro Schools</ul>
                     <ul className="text-xl h-[48px] lg:min-w-[174px] font-semibold flex lg:items-center lg:justify-center bg-[#FFCC33] text-[#3D3D3D] rounded-lg p-5 whitespace-nowrap">NGF KIDS</ul>
                 </div>
-                <div className="flex lg:space-x-8 space-x-8 w-full lg:justify-center lg:items-center animate-scroll group-hover:paused">
+                <div className="hidden sm:flex lg:space-x-8 space-x-8 w-full lg:justify-center lg:items-center animate-scroll group-hover:paused">
                     <ul className="text-xl font-semibold flex items-center lg:justify-center bg-[#F9F8F8] text-[#3D3D3D] h-[48px] lg:min-w-[174px] rounded-lg p-5 space-x-2">
                         <li>Valley</li>
                         <li className="text-[#00AC47]">School</li>
