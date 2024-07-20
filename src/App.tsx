@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-0 lg:mr-0 font-madeTommy lg:px-[200px] bg-[#FBFFFE]">
+      <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-0 lg:mr-0 font-madeTommy lg:px-[74px] bg-[#FBFFFE]">
         <Hero />
       </div>
       <div className="-mt-16">

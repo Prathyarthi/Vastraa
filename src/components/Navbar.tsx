@@ -10,7 +10,7 @@ function Navbar() {
     }
 
     return (
-        <nav className="sticky z-20 border-b lg:px-[200px] ml-[16px] mr-[16px] bg-[#FBFFFE]">
+        <nav className="sticky z-20 border-b lg:px-[74px] ml-[16px] mr-[16px] lg:ml-0 lg:mr-0 bg-[#FBFFFE]">
             <div className="flex h-[12vh] justify-between items-center w-full">
                 <div>
                     <a href="/"><img src={vastraa_logo} alt="Vastraa Logo" /></a>
@@ -21,7 +21,7 @@ function Navbar() {
                 </button>
 
                 {isOpen ? <>
-                    <div className='md:hidden w-full fixed right-0'>
+                    <div className='md:hidden w-full fixed right-0 font-semibold'>
                         <div className='h-48 mt-5 text-end absolute flex flex-col items-end w-full'>
                             <div className='bg-[#FBFFFE] flex flex-col p-[24px] rounded-lg space-y-4 font-semibold'>
                                 <a href="/events" className='hover:text-gradient'>Events</a>
@@ -32,7 +32,7 @@ function Navbar() {
                         </div>
                     </div>
                 </> :
-                    <div className="hidden md:block space-x-6">
+                    <div className="hidden md:block space-x-6 font-semibold">
                         <a href="/events" className='hover:text-gradient'>Events</a>
                         <a href="/costumes" className='hover:text-gradient'>Costumes</a>
                         <a href="/who" className='hover:text-gradient'>Who are we?</a>
