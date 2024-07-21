@@ -27,6 +27,9 @@ module.exports = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        gradient: {
+          DEFAULT: "#AB2985",
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -66,12 +69,30 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        fontFamily: {
+          madeTommy: ['MADE TOMMY', 'sans-serif']
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "scroll": 'scroll 20s linear infinite',
+        "paused": "animation-play-state:paused"
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
 }
+
+
+
+
+// @layer utilities{
+//   .paused{
+//       animation-play-state: paused;
+//   }
+// }
