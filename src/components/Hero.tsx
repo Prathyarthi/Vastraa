@@ -1,5 +1,5 @@
-import CarouselPlugin from "./Carousel"
-// import Carousel from "./Carousel"
+// import CarouselPlugin from "./Carousel"
+import Carousel from "./Carousel"
 function Hero() {
 
     return (
@@ -13,8 +13,8 @@ function Hero() {
                     </div>
                 </div>
                 <div className="lg:w-1/2">
-                    {/* <Carousel autoSlide={true} /> */}
-                    <CarouselPlugin />
+                    <Carousel autoSlide={true} />
+                    {/* <CarouselPlugin /> */}
                 </div>
             </div>
         </section>
