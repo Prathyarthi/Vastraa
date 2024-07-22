@@ -26,7 +26,8 @@ function Navbar() {
                             <div className='bg-[#FBFFFE] flex flex-col p-[24px] rounded-lg space-y-4 font-semibold'>
                                 <a href="/events" className='hover:text-gradient'>Events</a>
                                 <a href="/costumes" className='hover:text-gradient'>Costumes</a>
-                                <a href="/who" className='hover:text-gradient'>Who are we?</a>
+                                <a href="/whyVastraa" className='hover:text-gradient'>Why Vastraa?</a>
+                                <a href="/branches" className='hover:text-gradient'>Branches</a>
                                 <a href="/contact" className='hover:text-gradient'>Contact</a>
                             </div>
                         </div>
@@ -35,7 +36,8 @@ function Navbar() {
                     <div className="hidden md:block space-x-6 font-semibold">
                         <a href="/events" className='hover:text-gradient'>Events</a>
                         <a href="/costumes" className='hover:text-gradient'>Costumes</a>
-                        <a href="/who" className='hover:text-gradient'>Who are we?</a>
+                        <a href="/whyVastraa" className='hover:text-gradient'>Why Vastraa?</a>
+                        <a href="/branches" className='hover:text-gradient'>Branches</a>
                         <a href="/contact" className='hover:text-gradient'>Contact</a>
                     </div>
                 }
