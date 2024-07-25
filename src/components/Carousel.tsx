@@ -1,31 +1,41 @@
 // import { ChevronLeft, ChevronRight } from "react-feather"
-import image from "../assets/Image.png"
-import image1 from "../assets/Image1.png"
-import image2 from "../assets/Image2.png"
-import image3 from "../assets/Image3.png"
-import image4 from "../assets/Image4.png"
+import classical from "../assets/Classical@1x.png"
+import krishna from "../assets/Krishna@1x.png"
+import doctor from "../assets/Doctor@1x.png"
+import dance from "../assets/Dance@1x.png"
+import chinese from "../assets/Chinese@1x.png"
+import halloween from "../assets/Hallween@1x.png"
+import animal from "../assets/Animal@1x.png"
 import { useEffect, useState } from "react"
 
 const pics = [
     {
         id: 1,
-        image: image
+        image: classical
     },
     {
         id: 2,
-        image: image1
+        image: krishna
     },
     {
         id: 3,
-        image: image2
+        image: doctor
     },
     {
         id: 4,
-        image: image3
+        image: dance
     },
     {
         id: 5,
-        image: image4
+        image: chinese
+    },
+    {
+        id: 6,
+        image: halloween
+    },
+    {
+        id: 7,
+        image: animal
     },
 ]
 
