@@ -48,12 +48,22 @@ function Fashion() {
                 </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-                <div className="lg:w-1/2">
+                <div className="">
                     <Carousel images={pics} />
                 </div>
 
-                <div className="lg:w-1/2 flex justify-center">
-                    <h1>Hello</h1>
+                <div className="flex justify-center flex-col">
+                    <p><span className="text-gradient">.</span><span className="text-gradient">Fashion Show Outfits:</span> Stylish and trendy outfits for the runway.</p>
+                    <p>Graduation Gowns: Elegant gowns for your big day.</p>
+                    <p>Pre-Wedding Gowns: Beautiful gowns for pre-wedding celebrations.</p>
+                    <p>Groom & Bridal Wear: Stunning attire for the bride and groom.</p>
+                    <p>Jewelleries: Exquisite pieces to complement any outfit.</p>
+                    <p>Blazers & Suits: Classic and refined blazers & suits.</p>
+                    <p>Lehengas: Gorgeous traditional attire.</p>
+                    <h2>
+                        Our expert team ensures a seamless and spectacular experience, turning your vision into reality and creating lasting memories.
+                    </h2>
+
                 </div>
             </div>
         </section>
