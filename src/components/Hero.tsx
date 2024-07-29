@@ -7,6 +7,7 @@ import dance from "../assets/Dance@1x.png"
 import chinese from "../assets/Chinese@1x.png"
 import halloween from "../assets/Hallween@1x.png"
 import animal from "../assets/Animal@1x.png"
+
 const pics = [
     {
         id: 1,
@@ -57,7 +58,7 @@ function Hero() {
                     </div>
                 </div>
 
-                <div className="lg:w-1/2 flex">
+                <div className="lg:w-1/2">
                     {/* <Carousel autoSlide={true} /> */}
                     <Carousel images={pics} />
 

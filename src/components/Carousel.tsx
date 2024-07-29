@@ -115,7 +115,7 @@ const Carousel = ({ images, delay = 2000 }) => {
 
     return (
         <div className="carousel-container">
-            <div className="carousel" ref={carouselRef}>
+            <div className="carousel h-[530px]" ref={carouselRef}>
                 {images.map((image, index) => (
                     <img key={index} src={image.image} alt={`Slide ${index}`} className="carousel-image" />
                 ))}

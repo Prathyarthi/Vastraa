@@ -81,7 +81,7 @@ function Costume() {
                     // <div className="h-[260px] w-full border rounded-lg overflow-hidden">
                     //     <img className="" src={costume.image} alt={costume.title} />
                     // </div>
-                    <Card key={costume.id} title={costume.title} image={costume.image} link=""/>
+                    <Card key={costume.id} title={costume.title} image={costume.image} />
                 ))}
             </div>
         </section>
