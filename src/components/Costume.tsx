@@ -1,4 +1,5 @@
 import classical from "../assets/Classical@1x.png"
+import Card from "./Card"
 
 const costumes = [
     {
@@ -77,9 +78,10 @@ function Costume() {
 
             <div className="grid grid-cols-4 my-10 gap-4">
                 {costumes.map((costume) => (
-                    <div className="h-[260px] w-full border rounded-lg overflow-hidden">
-                        <img className="" src={costume.image} alt={costume.title} />
-                    </div>
+                    // <div className="h-[260px] w-full border rounded-lg overflow-hidden">
+                    //     <img className="" src={costume.image} alt={costume.title} />
+                    // </div>
+                    <Card key={costume.id} title={costume.title} image={costume.image} link=""/>
                 ))}
             </div>
         </section>
