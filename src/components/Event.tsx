@@ -55,14 +55,16 @@ function Event() {
                     <Carousel images={pics} />
                 </div>
 
-                <div className="flex justify-center flex-col">
-                    <p>Sound and Lighting: Professional audio and visual setups for an immersive experience.</p>
-                    <p>Wedding Planning: From venue selection to decor, we handle every detail of your big day.</p>
-                    <p>Choreography: Expert choreography services to make your events lively and entertaining.</p>
-                    <p>LED Walls: High - quality LED walls for dynamic and engaging displays.</p>
-                    <p>Carnival Events: Fun - filled carnival setups to create a festive atmosphere.</p>
-                    <p>School Annual Day: Fun - filled carnival setups to create a festive atmosphere.</p>
-                    <p>Our expert team ensures a seamless and spectacular experience, turning your vision into reality and creating lasting memories.</p>
+                <div className="flex justify-center flex-col lg:ml-5">
+                    <ul className="space-y-4 text-md list-disc marker:text-gradient font-medium">
+                        <li><span className="text-gradient">Sound and Lighting:</span> Professional audio and visual setups for an immersive experience.</li>
+                        <li><span className="text-gradient">Wedding Planning:</span> From venue selection to decor, we handle every detail of your big day.</li>
+                        <li><span className="text-gradient">Choreography:</span> Expert choreography services to make your events lively and entertaining.</li>
+                        <li><span className="text-gradient">LED Walls:</span> High - quality LED walls for dynamic and engaging displays.</li>
+                        <li><span className="text-gradient">Carnival Events:</span> Fun - filled carnival setups to create a festive atmosphere.</li>
+                        <li><span className="text-gradient">School Annual Day:</span> Fun - filled carnival setups to create a festive atmosphere.</li>
+                    </ul>
+                    <h2>Our expert team ensures a seamless and spectacular experience, turning your vision into reality and creating lasting memories.</h2>
                 </div>
             </div>
         </section >

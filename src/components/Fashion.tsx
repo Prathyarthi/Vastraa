@@ -53,18 +53,19 @@ function Fashion() {
                     <Carousel images={pics} />
                 </div>
 
-                <div className="flex justify-center flex-col">
-                    <p><span className="text-gradient">.</span><span className="text-gradient">Fashion Show Outfits:</span> Stylish and trendy outfits for the runway.</p>
-                    <p>Graduation Gowns: Elegant gowns for your big day.</p>
-                    <p>Pre-Wedding Gowns: Beautiful gowns for pre-wedding celebrations.</p>
-                    <p>Groom & Bridal Wear: Stunning attire for the bride and groom.</p>
-                    <p>Jewelleries: Exquisite pieces to complement any outfit.</p>
-                    <p>Blazers & Suits: Classic and refined blazers & suits.</p>
-                    <p>Lehengas: Gorgeous traditional attire.</p>
+                <div className="flex justify-center flex-col lg:ml-5">
+                    <ul className="space-y-4 text-md list-disc marker:text-gradient font-medium">
+                        <li><span className="text-gradient">Fashion Show Outfits:</span> Stylish and trendy outfits for the runway.</li>
+                        <li><span className="text-gradient">Graduation Gowns:</span> Elegant gowns for your big day.</li>
+                        <li><span className="text-gradient">Pre-Wedding Gowns:</span> Beautiful gowns for pre-wedding celebrations.</li>
+                        <li><span className="text-gradient">Groom & Bridal Wear:</span> Stunning attire for the bride and groom.</li>
+                        <li><span className="text-gradient">Jewelleries:</span> Exquisite pieces to complement any outfit.</li>
+                        <li><span className="text-gradient">Blazers & Suits:</span> Classic and refined blazers & suits.</li>
+                        <li><span className="text-gradient">Lehengas:</span> Gorgeous traditional attire.</li>
+                    </ul>
                     <h2>
                         Our expert team ensures a seamless and spectacular experience, turning your vision into reality and creating lasting memories.
                     </h2>
-
                 </div>
             </div>
         </section>
