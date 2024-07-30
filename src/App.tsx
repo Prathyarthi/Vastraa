@@ -1,3 +1,4 @@
+import Banner from "./components/Banner"
 import Client_section from "./components/Client_section"
 import Costume from "./components/Costume"
 import Event from "./components/Event"
@@ -14,6 +15,9 @@ function App() {
       <Navbar />
       <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-0 lg:mr-0 font-madeTommy lg:px-[74px] bg-[#FBFFFE]">
         <Hero />
+      </div>
+      <Banner />
+      <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-0 lg:mr-0 font-madeTommy lg:px-[74px] bg-[#FBFFFE]">
         <Client_section />
         <Costume />
         <Fashion />
