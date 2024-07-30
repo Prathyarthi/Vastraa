@@ -33,7 +33,7 @@ function Event() {
     return (
         <section className="">
             <div className="flex space-x-4">
-                <div className="bg-gradient h-[104px] w-[12px] border rounded-full"></div>
+                <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
                     <h1 className="font-bold text-3xl">Event Management</h1>
                     <p>Make your event unforgettable with our comprehensive management services. From sound and lighting to wedding planning, choreography, LED walls, and carnival events, we handle every detail with precision and creativity. Let us bring your vision to life!</p>

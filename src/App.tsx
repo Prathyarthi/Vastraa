@@ -13,10 +13,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-0 lg:mr-0 font-madeTommy lg:px-[74px] bg-[#FBFFFE]">
+      <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-0 lg:mr-0 font-madeTommy lg:px-[74px] bg-[#FBFFFE] relative">
         <Hero />
+        <div className="absolute inset-0 flex items-end">
+          <Banner />
+        </div>
       </div>
-      <Banner />
       <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-0 lg:mr-0 font-madeTommy lg:px-[74px] bg-[#FBFFFE]">
         <Client_section />
         <Costume />

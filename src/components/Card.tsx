@@ -12,7 +12,7 @@ const Card = ({
                 <img
                     src={image}
                     alt="project_image"
-                    className="md:w-full md:h-[283px] transition-transform duration-300 ease-in-out transform hover:scale-105"
+                    className="md:w-full md:h-[253px] transition-transform duration-300 ease-in-out transform hover:scale-105"
                 />
             </div>
             <div className="py-4 flex flex-col">

@@ -68,7 +68,7 @@ function Costume() {
     return (
         <section className="">
             <div className="flex space-x-4">
-                <div className="bg-gradient h-[104px] w-[12px] border rounded-full"></div>
+                <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
                     <h1 className="font-bold text-3xl">Cool Costume Collection!</h1>
                     <p>Our clients are at the heart of everything we do. We pride ourselves on delivering personalized, top-notch service to meet their unique needs.
@@ -76,7 +76,7 @@ function Costume() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-4 my-10 gap-4">
+            <div className="grid grid-cols-4 my-10 gap-x-[74px]">
                 {costumes.map((costume) => (
                     // <div className="h-[260px] w-full border rounded-lg overflow-hidden">
                     //     <img className="" src={costume.image} alt={costume.title} />

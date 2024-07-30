@@ -42,7 +42,7 @@ const pics = [
 function Hero() {
 
     return (
-        <section className="lg:w-full lg:h-[100vh] lg:items-center lg:justify-center flex flex-col mt-16 lg:mt-0">
+        <section className="lg:w-full lg:h-[90vh] lg:items-center lg:justify-center flex flex-col mt-16 lg:mt-0">
             <div className="flex lg:justify-between lg:flex-row flex-col-reverse w-full">
 
                 <div className="lg:w-1/2 flex flex-col lg:place-content-center space-y-4 font-normal lg:text-start text-center mt-5 lg:mt-0">
