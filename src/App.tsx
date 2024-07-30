@@ -5,6 +5,7 @@ import Fashion from "./components/Fashion"
 // import Clients from "./components/Clients"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Why from "./components/Why"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Costume />
         <Fashion />
         <Event />
+        <Why />
       </div>
       {/* <div className="-mt-16">
         <Clients />
