@@ -1,8 +1,82 @@
-import { ChevronLeft, ChevronRight } from "react-feather"
+import img1 from "../assets/logo-1-3@1x.png"
+import img2 from "../assets/cropped-vydehi_logo1@1x.png"
+import img3 from "../assets/_image@1x.png"
+import img4 from "../assets/wf-logo-150x150@1x.png"
+import img5 from "../assets/Sanjay-Ghodawat-International-School-3-e1689178667639@1x.png"
+import img6 from "../assets/snis-logo1@1x.png"
+import img7 from "../assets/logo.png@1x.png"
+import img8 from "../assets/logo@1x.png"
+
+const pics = [
+    {
+        id: 1,
+        image: img1
+    },
+    {
+        id: 2,
+        image: img2
+    },
+    {
+        id: 3,
+        image: img3
+    },
+    {
+        id: 4,
+        image: img4
+    },
+    {
+        id: 5,
+        image: img5
+    },
+    {
+        id: 6,
+        image: img6
+    },
+    {
+        id: 7,
+        image: img7
+    },
+    {
+        id: 8,
+        image: img8
+    },
+    {
+        id: 1,
+        image: img1
+    },
+    {
+        id: 2,
+        image: img2
+    },
+    {
+        id: 3,
+        image: img3
+    },
+    {
+        id: 4,
+        image: img4
+    },
+    {
+        id: 5,
+        image: img5
+    },
+    {
+        id: 6,
+        image: img6
+    },
+    {
+        id: 7,
+        image: img7
+    },
+    {
+        id: 8,
+        image: img8
+    },
+]
 
 function Client_section() {
     return (
-        <section className="lg:w-full lg:h-[60vh] flex-col mt-16 lg:mt-0 lg:relative">
+        <section className="lg:w-full mb-32 flex-col mt-16 lg:mt-0 lg:relative">
             <div className="w-full mt-20">
                 <div className="flex justify-center flex-col text-center space-y-2">
                     <h1 className="text-primary font-semibold text-3xl">Our Clients</h1>
@@ -11,16 +85,20 @@ function Client_section() {
                 </div>
             </div>
 
-            <div className="hidden lg:absolute lg:inset-0 lg:flex lg:justify-between lg:px-16">
-                <button className="">
-                    <ChevronLeft size={40} />
-                </button>
-                <button className="z-10">
-                    <ChevronRight size={40} />
-                </button>
+            <div className="w-full flex overflow-hidden lg:space-x-8 group lg:mx-[20px] mt-10">
+                <div className="flex lg:space-x-8 space-x-8 w-full lg:justify-center lg:items-center animate-scroll group-hover:paused gap-x-8">
+                    {pics.map((pic) => (
+                        <img src={pic.image} alt="img" />
+                    ))}
+                </div>
+                {/* <div className="flex lg:space-x-8 space-x-8 w-full lg:justify-center lg:items-center animate-scroll group-hover:paused gap-x-8">
+                    {pics.map((pic) => (
+                        <img src={pic.image} alt="img" />
+                    ))}
+                </div> */}
             </div>
 
-            <div className="flex overflow-hidden lg:space-x-8 group lg:mx-[80px]">
+            {/* <div className="flex overflow-hidden lg:space-x-8 group lg:mx-[20px] mt-10">
                 <div className="flex lg:space-x-8 space-x-8 w-full lg:justify-center lg:items-center animate-scroll group-hover:paused">
                     <ul className="text-xl font-semibold flex items-center lg:justify-center bg-[#F9F8F8] text-[#3D3D3D] h-[48px] w-[174px] rounded-lg p-5 space-x-2">
                         <li>Valley</li>
@@ -41,7 +119,7 @@ function Client_section() {
                     <ul className="text-xl font-semibold flex items-center lg:justify-center bg-[#1769FF] text-[#FFCC33] h-[48px] lg:min-w-[174px] rounded-lg p-5 whitespace-nowrap">Euro Schools</ul>
                     <ul className="text-xl h-[48px] lg:min-w-[174px] font-semibold flex items-center lg:justify-center bg-[#FFCC33] text-[#3D3D3D]  rounded-lg p-5 whitespace-nowrap">NGF KIDS</ul>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }
