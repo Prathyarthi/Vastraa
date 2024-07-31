@@ -66,8 +66,8 @@ const costumes = [
 
 function Costume() {
     return (
-        <section className="">
-            <div className="flex space-x-4">
+        <section className="min-h-screen">
+            <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
                     <h1 className="font-bold text-3xl">Cool Costume Collection!</h1>
@@ -76,13 +76,14 @@ function Costume() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-4 my-10 gap-8">
+            <div className="grid grid-cols-4 mt-12 gap-10 mb-2">
                 {costumes.map((costume) => (
-                    // <div className="h-[260px] w-full border rounded-lg overflow-hidden">
-                    //     <img className="" src={costume.image} alt={costume.title} />
-                    // </div>
                     <Card key={costume.id} title={costume.title} image={costume.image} />
                 ))}
+            </div>
+            <div className="ml-6">
+                <p className="text-primary font-semibold">Discover a wide variety of styles, <span className="text-gradient">from classic to contemporary,<br /> </span>
+                    ensuring the perfect fit for your event!!!</p>
             </div>
         </section>
     )

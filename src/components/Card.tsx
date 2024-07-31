@@ -14,15 +14,10 @@ const Card = ({
                     alt="project_image"
                     className="md:w-[250px] md:h-[250px] transition-transform duration-300 ease-in-out transform hover:scale-105"
                 />
-                <h1 className="font-medium lg:font-normal text-md mb-2 text-center">
-                    {title}
-                </h1>
             </div>
-            {/* <div className="py-4 flex flex-col">
-                <h1 className="font-medium lg:font-normal text-md mb-2 text-center">
-                    {title}
-                </h1>
-            </div> */}
+            <h1 className="font-medium lg:font-normal text-md mb-2 text-center py-4">
+                {title}
+            </h1>
         </div>
     );
 };

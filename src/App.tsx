@@ -19,7 +19,7 @@ function App() {
       {/* <div className="w-full flex md:items-end md:-mt-56">
         <Banner />
       </div> */}
-      <div className="ml-[16px] mr-[16px] lg:ml-[200px] lg:mr-[200px] font-madeTommy bg-[#FBFFFE]">
+      <div className="ml-[16px] mr-[16px] lg:ml-[150px] lg:mr-[150px] font-madeTommy bg-[#FBFFFE]">
         <Client_section />
         <Costume />
         <Fashion />
