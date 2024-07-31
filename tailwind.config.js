@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        madeTommy: ['MADE TOMMY', 'sans-serif']
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -72,9 +75,6 @@ module.exports = {
         scroll: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
-        },
-        fontFamily: {
-          madeTommy: ['MADE TOMMY', 'sans-serif']
         },
       },
       animation: {

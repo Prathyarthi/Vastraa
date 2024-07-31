@@ -1,7 +1,7 @@
 import img1 from "../assets/Frame 79@1x.png"
-import krishna from "../assets/Krishna@1x.png"
-import doctor from "../assets/Doctor@1x.png"
-import dance from "../assets/Dance@1x.png"
+import img2 from "../assets/Frame 80@1x.png"
+import img3 from "../assets/Frame 81@1x.png"
+import img4 from "../assets/Frame 82@1x.png"
 
 const pics = [
     {
@@ -10,21 +10,21 @@ const pics = [
     },
     {
         id: 2,
-        image: krishna
+        image: img2
     },
     {
         id: 3,
-        image: doctor
+        image: img3
     },
     {
         id: 4,
-        image: dance
+        image: img4
     }
 ]
 
 function Why() {
     return (
-        <section className="h-screen">
+        <section className="min-h-screen">
             <div className="grid grid-cols-2 gap-4">
                 <div className="flex space-x-4">
                     <div className="bg-gradient lg:h-[148px] lg:min-w-[8px] border rounded-full"></div>
@@ -35,7 +35,7 @@ function Why() {
                 </div>
 
                 <div className="flex">
-                    <div className="grid grid-cols-2">
+                    <div className="grid grid-cols-2 gap-5">
                         {pics.map((pic) => (
                             <img src={pic.image} alt="" />
                         ))}

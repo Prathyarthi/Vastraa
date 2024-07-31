@@ -13,23 +13,18 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-0 lg:mr-0 font-madeTommy lg:px-[74px] bg-[#FBFFFE] relative">
+      <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-[150px] lg:mr-[150px] font-madeTommy bg-[#FBFFFE]">
         <Hero />
-        <div className="absolute inset-0 flex items-end">
-          <Banner />
-        </div>
       </div>
-      <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-0 lg:mr-0 font-madeTommy lg:px-[74px] bg-[#FBFFFE]">
+      {/* <div className="w-full flex md:items-end md:-mt-56">
+        <Banner />
+      </div> */}
+      <div className="ml-[16px] mr-[16px] lg:ml-[200px] lg:mr-[200px] font-madeTommy bg-[#FBFFFE]">
         <Client_section />
         <Costume />
         <Fashion />
         <Event />
         <Why />
-      </div>
-      {/* <div className="-mt-16">
-        <Clients />
-      </div> */}
-      <div className="">
       </div>
     </>
   )
