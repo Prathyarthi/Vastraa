@@ -31,22 +31,22 @@ const pics = [
 
 function Event() {
     return (
-        <section className="">
-            <div className="flex space-x-4">
+        <section className="min-h-screen mb-32">
+            <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
-                    <h1 className="font-bold text-3xl">Event Management</h1>
-                    <p>Make your event unforgettable with our comprehensive management services. From sound and lighting to wedding planning, choreography, LED walls, and carnival events, we handle every detail with precision and creativity. Let us bring your vision to life!</p>
+                    <h1 className="font-medium lg:text-4xl">Event Management</h1>
+                    <p className="text-base text-primary font-normal leading-[140%]">Make your event unforgettable with our comprehensive management services. From sound and lighting to wedding planning, choreography, LED walls, and carnival events, we handle every detail with precision and creativity. Let us bring your vision to life!</p>
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 justify-between mt-12">
+            <div className="grid grid-cols-2 justify-between mt-16">
                 <div className="">
                     <Carousel images={pics} />
                 </div>
 
-                <div className="">
-                    <ul className="space-y-4 text-base list-disc lg:ml-10 marker:text-gradient font-medium">
+                <div className="mt-4 flex">
+                    <ul className="space-y-4 text-base list-disc lg:ml-10 marker:text-gradient font-medium text-primary">
                         <li><span className="text-gradient">Sound and Lighting:</span> Professional audio and visual setups for an immersive experience.</li>
                         <li><span className="text-gradient">Wedding Planning:</span> From venue selection to decor, we handle every detail of your big day.</li>
                         <li><span className="text-gradient">Choreography:</span> Expert choreography services to make your events lively and entertaining.</li>
