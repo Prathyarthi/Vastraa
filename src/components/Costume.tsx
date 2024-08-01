@@ -68,15 +68,15 @@ function Costume() {
     return (
         <section className="min-h-screen mb-32">
             <div className="flex space-x-6">
-                <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] border rounded-full"></div>
+                <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
-                    <h1 className="font-bold text-3xl">Cool Costume Collection!</h1>
+                    <h1 className="font-bold text-2xl lg:text-4xl">Cool Costume Collection!</h1>
                     <p>Our clients are at the heart of everything we do. We pride ourselves on delivering personalized, top-notch service to meet their unique needs.
                         From individuals to organizations, our commitment to excellence ensures their events are truly unforgettable.</p>
                 </div>
             </div>
 
-            <div className="grid grid-cols-4 mt-12 gap-10 mb-10">
+            <div className="lg:grid lg:grid-cols-4 grid grid-cols-2 mt-12 gap-10 mb-10">
                 {costumes.map((costume) => (
                     <Card key={costume.id} title={costume.title} image={costume.image} />
                 ))}

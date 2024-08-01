@@ -33,14 +33,14 @@ function Event() {
     return (
         <section className="min-h-screen mb-32">
             <div className="flex space-x-6">
-                <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] border rounded-full"></div>
+                <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] border rounded-full min-w-[8px]"></div>
                 <div className="space-y-4">
-                    <h1 className="font-medium lg:text-4xl">Event Management</h1>
+                    <h1 className="font-medium text-2xl lg:text-4xl">Event Management</h1>
                     <p className="text-base text-primary font-normal leading-[140%]">Make your event unforgettable with our comprehensive management services. From sound and lighting to wedding planning, choreography, LED walls, and carnival events, we handle every detail with precision and creativity. Let us bring your vision to life!</p>
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 justify-between mt-16">
+            <div className="lg:grid lg:grid-cols-2 lg:justify-between mt-16 flex flex-col px-5 lg:p-0">
                 <div className="">
                     <Carousel images={pics} />
                 </div>

@@ -25,13 +25,13 @@ const pics = [
 function Why() {
     return (
         <section className="min-h-screen">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-4">
                 <div className="flex space-x-4">
-                    <div className="bg-gradient lg:h-[148px] lg:min-w-[8px] border rounded-full"></div>
+                    <div className="bg-gradient lg:h-[148px] lg:min-w-[8px] min-w-[8px] border rounded-full h-48"></div>
                     <div className="flex flex-col">
                         <div className="space-y-4">
                             <h1 className="font-bold text-4xl text-primary">Why Vastraa?</h1>
-                            <p>Vastraa is more than just a costume provider; we are your <br />partners in creating unforgettable experiences. Our extensive <br /> collection and personalized service ensure you find the perfect <br /> attire for any event.</p>
+                            <p>Vastraa is more than just a costume provider; we are your <br className="hidden lg:block" />partners in creating unforgettable experiences. Our extensive <br className="hidden lg:block" /> collection and personalized service ensure you find the perfect <br className="hidden lg:block" /> attire for any event.</p>
                         </div>
 
                         <div className="mt-10 space-y-6">
@@ -46,7 +46,7 @@ function Why() {
                     </div>
                 </div>
 
-                <div className="flex">
+                <div className="flex mt-10 lg:mt-0">
                     <div className="grid grid-cols-2 gap-8">
                         {pics.map((pic) => (
                             <img src={pic.image} alt="" />
