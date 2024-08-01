@@ -1,4 +1,4 @@
-import Banner from "./components/Banner"
+// import Banner from "./components/Banner"
 import Client_section from "./components/Client_section"
 import Costume from "./components/Costume"
 import Event from "./components/Event"
