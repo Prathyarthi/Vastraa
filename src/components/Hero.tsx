@@ -7,7 +7,7 @@ import dance from "../assets/Dance@1x.png"
 import chinese from "../assets/Chinese@1x.png"
 import halloween from "../assets/Hallween@1x.png"
 import animal from "../assets/Animal@1x.png"
-import Banner from "./Banner"
+// import Banner from "./Banner"
 
 const pics = [
     {
