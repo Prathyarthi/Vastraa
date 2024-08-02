@@ -47,7 +47,7 @@ function Hero() {
             <div className="flex lg:justify-between lg:flex-row flex-col-reverse w-full">
 
                 <div className="lg:w-1/2 flex flex-col lg:place-content-center space-y-4 font-normal lg:text-start text-center mt-5 lg:mt-0">
-                    <h1 className="text-2xl lg:text-[40px] leading-[120%] font-extralight">Make Every Events <br /> Extraordinary with <span className="text-gradient font-medium"> Vastraa's <br /> Costumes and Events!</span>
+                    <h1 className="text-2xl lg:text-[40px] leading-[120%] font-light">Make Every Events <br /> Extraordinary with <span className="text-gradient font-medium"> Vastraa's <br /> Costumes and Events!</span>
                     </h1>
                     <div>
                         <p className="text-[#1B1B1E] text-lg leading-[150%] font-normal">Transform your celebrations with Vastraa's exceptional <br className="hidden lg:block" /> costumes and event services. From grand weddings and <br className="hidden lg:block" /> themed parties to school annual days, Vastraa makes <br className="hidden lg:block" />

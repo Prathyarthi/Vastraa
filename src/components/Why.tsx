@@ -24,24 +24,23 @@ const pics = [
 
 function Why() {
     return (
-        <section className="min-h-screen">
+        <section className="min-h-screen mb-32">
             <div className="lg:grid lg:grid-cols-2 lg:gap-4">
                 <div className="flex space-x-4">
-                    <div className="bg-gradient lg:h-[148px] lg:min-w-[8px] min-w-[8px] border rounded-full h-48"></div>
+                    <div className="bg-gradient lg:h-[120px] lg:min-w-[8px] min-w-[8px] border rounded-full h-28"></div>
                     <div className="flex flex-col">
                         <div className="space-y-4">
-                            <h1 className="font-bold text-4xl text-primary">Why Vastraa?</h1>
-                            <p>Vastraa is more than just a costume provider; we are your <br className="hidden lg:block" />partners in creating unforgettable experiences. Our extensive <br className="hidden lg:block" /> collection and personalized service ensure you find the perfect <br className="hidden lg:block" /> attire for any event.</p>
+                            <h1 className="font-bold text-4xl text-primary">Team</h1>
+                            <p className="text-[#1B1B1E] font-medium">Expert Team with Dance and Art Backgrounds <br className="hidden lg:block" />
+                                Crafting Unique Costumes</p>
                         </div>
 
-                        <div className="mt-10 space-y-6">
-                            <h3 className="font-medium text-gradient">Benefits:</h3>
-                            <ul className="space-y-4 list-disc ml-3 marker:text-gradient">
-                                <li><span className="text-gradient">Wide Range of Collections:</span> From fashion show outfits to bridal wear, we have something for every occasion.</li>
-                                <li><span className="text-gradient">Customization:</span> Our team can design bespoke costumes tailored to your needs.</li>
-                                <li><span className="text-gradient">Quality:</span> We prioritize quality to ensure you look and feel your best.</li>
-                                <li><span className="text-gradient">Convenience:</span> One-stop solution for all your costume and event needs.</li>
-                            </ul>
+                        <div className="mt-10 space-y-6 font-normal">
+                            <p>Vastraa's team is composed of talented individuals with diverse backgrounds in dance and art. Our experts bring a unique perspective to costume design, blending their extensive experience in performance with artistic flair. This combination ensures that every costume we offer is not only visually striking but also thoughtfully crafted to enhance your experience.
+                            </p>
+                            <p>
+                                From intricate details to creative concepts, our team's passion and expertise drive our commitment to delivering exceptional costumes that make every event memorable. Discover the talent behind Vastraa and see how their background elevates your costume rental experience.
+                            </p>
                         </div>
                     </div>
                 </div>
