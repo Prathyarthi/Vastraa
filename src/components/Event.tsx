@@ -31,7 +31,7 @@ const pics = [
 
 function Event() {
     return (
-        <section className="min-h-screen mb-32">
+        <section id="events" className="min-h-screen mb-20">
             <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] border rounded-full min-w-[8px]"></div>
                 <div className="space-y-4">

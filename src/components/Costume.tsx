@@ -66,7 +66,7 @@ const costumes = [
 
 function Costume() {
     return (
-        <section className="min-h-screen mb-32">
+        <section id="costumes" className="min-h-screen mb-32">
             <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">

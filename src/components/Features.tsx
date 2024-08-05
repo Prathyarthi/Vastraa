@@ -27,7 +27,7 @@ const features = [
 
 function Features() {
     return (
-        <section className="mb-32">
+        <section id="whyVastraa" className="mb-20">
             <div className="">
                 <div className="flex space-x-4">
                     <div className="bg-gradient lg:h-[110px] lg:min-w-[8px] min-w-[8px] border rounded-full h-48"></div>
