@@ -27,18 +27,18 @@ const features = [
 
 function Features() {
     return (
-        <section id="whyVastraa" className="mb-20">
+        <section id="whyVastraa" className="min-h-screen pt-40">
             <div className="">
                 <div className="flex space-x-4">
                     <div className="bg-gradient lg:h-[110px] lg:min-w-[8px] min-w-[8px] border rounded-full h-48"></div>
                     <div className="flex flex-col">
                         <div className="space-y-4">
-                            <h1 className="text-[#1B1B1E] font-bold text-4xl text-primary">Why Vastraa?</h1>
-                            <p className="text-[#1B1B1E] font-medium">Vastraa is more than just a costume provider; we are your partners in creating unforgettable experiences. Our extensive collection and personalized service ensure you find the perfect attire for any event.</p>
+                            <h1 className="text-[#1B1B1E] font-medium text-4xl text-primary">Why Vastraa?</h1>
+                            <p className="text-[#1B1B1E] font-normal">Vastraa is more than just a costume provider; we are your partners in creating unforgettable experiences. <br /> Our extensive collection and personalized service ensure you find the perfect attire for any event.</p>
                         </div>
                     </div>
                 </div>
-                <div className="lg:grid lg:grid-cols-4 flex-col items-center space-y-5 lg:space-y-0 justify-center mt-12 lg:gap-[50px]">
+                <div className="lg:flex justify-between items-center space-y-5 lg:space-y-0 mt-12">
                     {features.map((feature) => (
                         <FeatureCard key={feature.title} icon={feature.icon} title={feature.title} description={feature.description} />
                     ))}

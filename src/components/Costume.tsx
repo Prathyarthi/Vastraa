@@ -66,12 +66,12 @@ const costumes = [
 
 function Costume() {
     return (
-        <section id="costumes" className="min-h-screen mb-32">
+        <section id="costumes" className="min-h-screen mb-32 pt-40">
             <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
-                    <h1 className="font-bold text-2xl lg:text-4xl">Cool Costume Collection!</h1>
-                    <p>Our clients are at the heart of everything we do. We pride ourselves on delivering personalized, top-notch service to meet their unique needs.
+                    <h1 className="font-medium text-2xl lg:text-4xl">Cool Costume Collection!</h1>
+                    <p className="text-primary font-normal">Our clients are at the heart of everything we do. We pride ourselves on delivering personalized, top-notch service to meet their unique needs. <br />
                         From individuals to organizations, our commitment to excellence ensures their events are truly unforgettable.</p>
                 </div>
             </div>
@@ -82,7 +82,7 @@ function Costume() {
                 ))}
             </div>
             <div className="ml-6">
-                <p className="text-primary font-semibold text-2xl">Discover a wide variety of styles, <span className="text-gradient">from classic to contemporary,<br /> </span>
+                <p className="text-primary font-normal text-2xl">Discover a wide variety of styles, <span className="text-gradient">from classic to contemporary,<br /> </span>
                     ensuring the perfect fit for your event!!!</p>
             </div>
         </section>

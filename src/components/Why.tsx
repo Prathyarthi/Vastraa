@@ -24,8 +24,8 @@ const pics = [
 
 function Why() {
     return (
-        <section className="min-h-screen mb-20">
-            <div className="lg:grid lg:grid-cols-2 lg:gap-4">
+        <section className="min-h-[80vh]">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-20">
                 <div className="flex space-x-4">
                     <div className="bg-gradient lg:h-[120px] lg:min-w-[8px] min-w-[8px] border rounded-full h-28"></div>
                     <div className="flex flex-col">

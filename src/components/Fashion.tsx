@@ -35,12 +35,12 @@ const pics = [
 ]
 function Fashion() {
     return (
-        <section className="min-h-screen mb-32">
+        <section className="min-h-[80vh]">
             <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
                     <h1 className="font-medium text-2xl lg:text-4xl">Fashion, <span className="text-gradient">Maternity, </span> Pre-Wedding, <span className="text-gradient">Bridal Collections</span> & More!</h1>
-                    <p className="text-base text-primary font-normal leading-[140%]">Explore our extensive collection of costumes, including fashion, maternity, pre-wedding, and bridal wear. Find the perfect attire for every special occasion in one place.</p>
+                    <p className="text-base text-primary font-normal leading-[140%]">Explore our extensive collection of costumes, including fashion, maternity, pre-wedding, and bridal wear. <br /> Find the perfect attire for every special occasion in one place.</p>
                 </div>
             </div>
             <div className="lg:grid lg:grid-cols-2 lg:justify-between mt-12 flex flex-col px-5 lg:p-0">
@@ -48,8 +48,8 @@ function Fashion() {
                     <Carousel images={pics} />
                 </div>
 
-                <div className="mt-6">
-                    <ul className="space-y-4 text-base list-disc lg:ml-10 marker:text-gradient font-medium text-primary">
+                <div className="mt-6 lg:ml-10">
+                    <ul className="space-y-4 text-base list-disc lg:ml-10 marker:text-gradient font-normal text-primary">
                         <li><span className="text-gradient">Fashion Show Outfits:</span> Stylish and trendy outfits for the runway.</li>
                         <li><span className="text-gradient">Graduation Gowns:</span> Elegant gowns for your big day.</li>
                         <li><span className="text-gradient">Pre-Wedding Gowns:</span> Beautiful gowns for pre-wedding celebrations.</li>
