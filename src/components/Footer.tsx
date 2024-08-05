@@ -21,7 +21,7 @@ function Footer() {
                     <p>Team</p>
                 </div>
                 <div className='flex flex-col space-y-5'>
-                    <div className='flex space-x-2'>
+                    <div className='flex space-x-2 items-center'>
                         {<MapPin />}
                         <h2 className='text-[#DF37AE] font-semibold text-2xl'>Jayanagar</h2>
                     </div>
@@ -31,7 +31,7 @@ function Footer() {
                     <p className='font-semibold'>+91-9986178988</p>
                 </div>
                 <div className='flex flex-col space-y-5'>
-                    <div className='flex space-x-2'>
+                    <div className='flex space-x-2 items-center'>
                         {<MapPin />}
                         <h2 className='text-[#DF37AE] font-semibold text-2xl'>Whitefiled</h2>
                     </div>
