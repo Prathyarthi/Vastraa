@@ -6,7 +6,6 @@ import Features from "./components/Features"
 import Footer from "./components/Footer"
 // import Clients from "./components/Clients"
 import Hero from "./components/Hero"
-import Independence_Banner from "./components/Independence_Banner"
 import Navbar from "./components/Navbar"
 import Why from "./components/Why"
 
