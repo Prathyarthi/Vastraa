@@ -1,66 +1,77 @@
-import classical from "../assets/Frame 54@1x.png"
+import img1 from "../assets/Copy of _M2A0279@1x.png"
+import img2 from "../assets/Frame 91@1x.png"
+import img3 from "../assets/Frame 79.png"
+import img4 from "../assets/Frame 89@1x.png"
+import img5 from "../assets/Frame 92@1x.png"
+import img6 from "../assets/Frame 90@1x.png"
+import img7 from "../assets/Frame 95@1x.png"
+import img8 from "../assets/Frame 94.png"
+import img9 from "../assets/Frame 94@1x.png"
+import img10 from "../assets/Frame 80.png"
+import img11 from "../assets/Frame 88@1x.png"
+import img12 from "../assets/Frame 82.png"
 import Card from "./Card"
 
 const costumes = [
     {
         id: 1,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Character Costumes",
+        image: img1
     },
     {
         id: 2,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Japanese Kimono",
+        image: img2
     },
     {
         id: 3,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Yakshgana",
+        image: img3
     },
     {
         id: 4,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Indian Army",
+        image: img4
     },
     {
         id: 5,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Demon Costumes",
+        image: img5
     },
     {
         id: 6,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Folk Costumes",
+        image: img6
     },
     {
         id: 7,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Historical Costumes",
+        image: img7
     },
     {
         id: 8,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Traditional Costumes",
+        image: img8
     },
     {
         id: 9,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Classical Costumes",
+        image: img9
     },
     {
         id: 10,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Egyptian Costume",
+        image: img10
     },
     {
         id: 11,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Spanish Costumes",
+        image: img11
     },
     {
         id: 12,
-        title: "Cool Costume Collection!",
-        image: classical
+        title: "Chinese Costumes",
+        image: img12
     },
 ]
 

@@ -38,7 +38,7 @@ function Features() {
                         </div>
                     </div>
                 </div>
-                <div className="lg:flex lg:justify-between items-center space-y-5 lg:space-y-0 mt-12">
+                <div className="lg:flex gap-10 md:mx-auto items-center space-y-5 lg:space-y-0 mt-12">
                     {features.map((feature) => (
                         <FeatureCard key={feature.title} icon={feature.icon} title={feature.title} description={feature.description} />
                     ))}

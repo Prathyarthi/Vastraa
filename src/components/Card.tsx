@@ -7,7 +7,7 @@ const Card = ({
 
 }) => {
     return (
-        <div className="max-w-sm overflow-hidden">
+        <div className="flex flex-col items-center max-w-sm overflow-hidden">
             <div className="overflow-hidden rounded-[16px]">
                 <img
                     src={image}

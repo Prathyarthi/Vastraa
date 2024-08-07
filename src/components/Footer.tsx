@@ -1,5 +1,5 @@
 import { MapPin } from 'lucide-react'
-import vastraa_logo from '../assets/Vastraa_logo_footer.png'
+import vastraa_logo from '../assets/Path@1x.png'
 
 function Footer() {
     return (
@@ -9,12 +9,12 @@ function Footer() {
                     <img src={vastraa_logo} alt="vastraa_logo" className='lg:w-[300px] w-[100px]' />
                 </div>
                 <div className='space-y-5'>
-                    <h2 className='text-[#DF37AE] font-semibold lg:text-2xl'>Links</h2>
+                    <h2 className='text-[#FFCC33] font-semibold lg:text-2xl'>Links</h2>
                     <p>Blogs</p>
                     <p>Mail</p>
                 </div>
                 <div className='space-y-5'>
-                    <h2 className='text-[#DF37AE] font-semibold lg:text-2xl'>Information</h2>
+                    <h2 className='text-[#FFCC33] font-semibold lg:text-2xl'>Information</h2>
                     <p>Costumes</p>
                     <p>Events</p>
                     <p>Why Vastraa?</p>
@@ -23,7 +23,7 @@ function Footer() {
                 <div className='flex flex-col space-y-5'>
                     <div className='flex space-x-2 items-center'>
                         {<MapPin />}
-                        <h2 className='text-[#DF37AE] font-semibold lg:text-2xl'>Jayanagar</h2>
+                        <h2 className='text-[#FFCC33] font-semibold lg:text-2xl'>Jayanagar</h2>
                     </div>
                     <p>69, 9th Main Rd, Jaya Nagar 1st Block,
                         Jayanagar 3rd Block East, Jayanagar,
@@ -34,7 +34,7 @@ function Footer() {
                 <div className='flex flex-col space-y-5'>
                     <div className='flex space-x-2 items-center'>
                         {<MapPin />}
-                        <h2 className='text-[#DF37AE] font-semibold lg:text-2xl'>Whitefiled</h2>
+                        <h2 className='text-[#FFCC33] font-semibold lg:text-2xl'>Whitefiled</h2>
                     </div>
                     <p>No A/2, Inner Cir Rd, Whitefield,
                         Dodsworth Layout, Bengaluru,

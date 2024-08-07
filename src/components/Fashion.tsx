@@ -36,10 +36,10 @@ function Fashion() {
     return (
         <section className="min-h-[80vh]">
             <div className="flex space-x-6">
-                <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
+                <div className="bg-gradient lg:h-[138px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
                     <h1 className="font-medium text-2xl lg:text-4xl">Fashion, <span className="text-gradient">Maternity, </span> Pre-Wedding, <span className="text-gradient">Bridal Collections</span> & More!</h1>
-                    <p className="text-base text-primary font-normal leading-[140%]">Explore our extensive collection of costumes, including fashion, maternity, pre-wedding, and bridal wear. <br /> Find the perfect attire for every special occasion in one place.</p>
+                    <p className="text-primary font-normal leading-[140%] xl:text-xl md:text-xs">Explore our extensive collection of costumes, including fashion, maternity, pre-wedding, and bridal wear. <br /> Find the perfect attire for every special occasion in one place.</p>
                 </div>
             </div>
             <div className="lg:grid lg:grid-cols-2 mt-16 lg:justify-between flex flex-col px-5 lg:p-0">
