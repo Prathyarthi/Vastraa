@@ -79,7 +79,7 @@ function Client_section() {
         <section id="#clients" className="lg:w-full flex-col mt-16 lg:mt-0 lg:relative">
             <div className="w-full mt-20">
                 <div className="flex justify-center flex-col text-center space-y-2">
-                    <h1 className="text-primary font-semibold text-3xl">Our Clients</h1>
+                    <h1 className="text-primary font-semibold text-3xl lg:mt-32">Our Clients</h1>
                     <p className="text-primary font-normal">Our clients are at the heart of everything we do. We pride ourselves on delivering personalized, top-notch service to meet their unique needs. <br />
                         From individuals to organizations, our commitment to excellence ensures their events are truly unforgettable.</p>
                 </div>

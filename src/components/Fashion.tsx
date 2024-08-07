@@ -1,11 +1,10 @@
-import Carousel from "./Carousel"
-
 import bride_groom from "../assets/Bridal & Groom@1x.png"
 import blazer from "../assets/blazers & suit@1x.png"
 import maternity from "../assets/Maternity@1x.png"
 import graduation from "../assets/Graduation@1x.png"
 import prewedding from "../assets/Prewedding@1x.png"
 import jewellery from "../assets/Jewellery set@1x.png"
+import CarouselComponent from "./CarouselComponent"
 
 const pics = [
     {
@@ -43,12 +42,12 @@ function Fashion() {
                     <p className="text-base text-primary font-normal leading-[140%]">Explore our extensive collection of costumes, including fashion, maternity, pre-wedding, and bridal wear. <br /> Find the perfect attire for every special occasion in one place.</p>
                 </div>
             </div>
-            <div className="lg:grid lg:grid-cols-2 lg:justify-between mt-12 flex flex-col px-5 lg:p-0">
+            <div className="lg:grid lg:grid-cols-2 mt-16 lg:justify-between flex flex-col px-5 lg:p-0">
                 <div className="">
-                    <Carousel images={pics} />
+                    <CarouselComponent images={pics} />
                 </div>
 
-                <div className="mt-6 lg:ml-10">
+                <div className="mt-6 lg:ml-10 flex">
                     <ul className="space-y-4 text-base list-disc lg:ml-10 marker:text-gradient font-normal text-primary">
                         <li><span className="text-gradient">Fashion Show Outfits:</span> Stylish and trendy outfits for the runway.</li>
                         <li><span className="text-gradient">Graduation Gowns:</span> Elegant gowns for your big day.</li>

@@ -1,13 +1,12 @@
 // import CarouselPlugin from "./Carousel"
 import Carousel from "./Carousel"
 import classical from "../assets/Classical@1x.png"
-import krishna from "../assets/Krishna@1x.png"
 import doctor from "../assets/Doctor@1x.png"
 import dance from "../assets/Dance@1x.png"
 import chinese from "../assets/Chinese@1x.png"
 import halloween from "../assets/Hallween@1x.png"
 import animal from "../assets/Animal@1x.png"
-// import Banner from "./Banner"
+import Banner from "./Banner"
 
 const pics = [
     {
@@ -16,26 +15,22 @@ const pics = [
     },
     {
         id: 2,
-        image: krishna
-    },
-    {
-        id: 3,
         image: doctor
     },
     {
-        id: 4,
+        id: 3,
         image: dance
     },
     {
-        id: 5,
+        id: 4,
         image: chinese
     },
     {
-        id: 6,
+        id: 5,
         image: halloween
     },
     {
-        id: 7,
+        id: 6,
         image: animal
     },
 ]
@@ -67,9 +62,9 @@ function Hero() {
                     {/* <img src={side_img} alt="side_img" className="h-[520px]" /> */}
                 </div>
             </div>
-            {/* <div className="w-full absolute bottom-[55px]">
+            <div className="w-full absolute bottom-0">
                 <Banner />
-            </div> */}
+            </div>
         </section>
     )
 }

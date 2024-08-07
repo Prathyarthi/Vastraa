@@ -11,7 +11,7 @@ interface CarouselProps {
     delay?: number;
 }
 
-const Carousel: FC<CarouselProps> = ({ images, delay = 2000 }) => {
+const CarouselComponent: FC<CarouselProps> = ({ images, delay = 2000 }) => {
     const carouselRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -44,17 +44,14 @@ const Carousel: FC<CarouselProps> = ({ images, delay = 2000 }) => {
     }, [delay]);
 
     return (
-        <div className="carousel-container rounded-[16px] w-[75%]">
+        <div className="carousel-container rounded-[16px] w-[100%]">
             <div className="carousel" ref={carouselRef}>
                 {images.map((image) => (
                     <img key={image.id} src={image.image} alt={`Slide ${image.id}`} className="carousel-image" />
-                ))} 
-            </div>
-            <div aria-hidden="true" className="relative">
-              <div className="absolute bottom-0 -inset-x-64 bg-gradient-to-t from-white/100 pt-[30%]" />
+                ))}
             </div>
         </div>
     );
 };
 
-export default Carousel;
+export default CarouselComponent;

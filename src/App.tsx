@@ -5,7 +5,6 @@ import Event from "./components/Event"
 import Fashion from "./components/Fashion"
 import Features from "./components/Features"
 import Footer from "./components/Footer"
-// import Clients from "./components/Clients"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Why from "./components/Why"
@@ -16,7 +15,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <div className="min-h-screen ml-[16px] mr-[16px] lg:ml-[150px] lg:mr-[150px] font-madeTommy bg-[#FBFFFE]">
+        <div className="ml-[16px] mr-[16px] lg:ml-[150px] lg:mr-[150px] font-madeTommy bg-[#FBFFFE]">
           <Hero />
         </div>
         <div className="ml-[16px] mr-[16px] lg:ml-[150px] lg:mr-[150px] font-madeTommy bg-[#FBFFFE]">
