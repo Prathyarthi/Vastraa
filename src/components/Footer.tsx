@@ -1,5 +1,5 @@
 import { MapPin } from 'lucide-react'
-import vastraa_logo from '../assets/Path@1x.png'
+import vastraa_logo from '../assets/Vastraa_Logo_footer.png'
 
 function Footer() {
     return (
