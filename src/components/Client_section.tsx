@@ -91,11 +91,6 @@ function Client_section() {
                         <img src={pic.image} alt="img" />
                     ))}
                 </div>
-                {/* <div className="flex lg:space-x-8 space-x-8 w-full lg:justify-center lg:items-center animate-scroll group-hover:paused gap-x-8">
-                    {pics.map((pic) => (
-                        <img src={pic.image} alt="img" />
-                    ))}
-                </div> */}
             </div>
         </section>
     )
