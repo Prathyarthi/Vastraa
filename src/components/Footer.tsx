@@ -1,12 +1,12 @@
 import { MapPin } from 'lucide-react'
-import vastraa_logo from '../assets/Vastraa_Logo_footer.png'
+import vastraaLogo from "../assets/Vastraa_Logo_footer.png"
 
 function Footer() {
     return (
         <div id='contact' className="bg-primary md:px-[150px] p-5 text-[#FBFFFE] lg:h-[400px] lg:flex items-center justify-center">
             <div className='lg:flex lg:gap-12 space-y-8 lg:space-y-0'>
                 <div>
-                    <img src={vastraa_logo} alt="vastraa_logo" className='lg:w-[300px] w-[100px]' />
+                    <img src={vastraaLogo} alt="vastraa_logo" className='lg:w-[300px] w-[100px]' />
                 </div>
                 <div className='space-y-5'>
                     <h2 className='text-[#FFCC33] font-semibold lg:text-2xl'>Links</h2>
