@@ -17,8 +17,6 @@ function App() {
         <Navbar />
         <div className="ml-[16px] mr-[16px] lg:ml-[150px] lg:mr-[150px] font-madeTommy bg-[#FBFFFE]">
           <Hero />
-        </div>
-        <div className="ml-[16px] mr-[16px] lg:ml-[150px] lg:mr-[150px] font-madeTommy bg-[#FBFFFE]">
           <Client_section />
           <Costume />
           <Fashion />

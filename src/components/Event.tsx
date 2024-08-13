@@ -30,16 +30,16 @@ const pics = [
 
 function Event() {
     return (
-        <section id="events" className="min-h-screen pt-40">
+        <section id="events" className="min-h-screen md:pt-40 pt-24">
             <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[130px] lg:min-w-[8px] border rounded-full min-w-[8px]"></div>
                 <div className="space-y-4">
-                    <h1 className="font-medium text-2xl lg:text-4xl">Event Management</h1>
+                    <h1 className="font-bold md:font-medium md:text-4xl text-3xl text-primary">Event Management</h1>
                     <p className="text-base text-primary font-normal leading-[140%]">Make your event unforgettable with our comprehensive management services. <br /> From sound and lighting to wedding planning, choreography, LED walls, and carnival events, we handle every detail with precision and creativity. Let us bring your vision to life!</p>
                 </div>
             </div>
 
-            <div className="lg:grid lg:grid-cols-2 lg:justify-between mt-16 flex flex-col px-5 lg:p-0">
+            <div className="lg:grid lg:grid-cols-2 lg:justify-between mt-[30px] flex md:flex-col flex-col-reverse px-5 lg:p-0">
 
                 <div className="mt-4 flex">
                     <ul className="space-y-4 text-base list-disc lg:ml-5 lg:mr-10 marker:text-gradient font-normal text-primary">
@@ -53,7 +53,7 @@ function Event() {
                     </ul>
                 </div>
 
-                <div className="">
+                <div className="mb-[10px]">
                     <CarouselComponent images={pics} />
                 </div>
             </div>

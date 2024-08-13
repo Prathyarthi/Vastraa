@@ -76,7 +76,7 @@ const pics = [
 
 function Client_section() {
     return (
-        <section id="#clients" className="lg:w-full flex-col mt-16 lg:mt-0 lg:relative">
+        <section id="#clients" className="lg:w-full flex-col mt-16 lg:mt-0 lg:relative hidden">
             <div className="w-full mt-20">
                 <div className="flex justify-center flex-col text-center space-y-2">
                     <h1 className="text-primary font-semibold text-3xl lg:mt-32">Our Clients</h1>

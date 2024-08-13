@@ -77,22 +77,22 @@ const costumes = [
 
 function Costume() {
     return (
-        <section id="costumes" className="min-h-screen mb-32 pt-40">
+        <section id="costumes" className="min-h-screen md:mb-32 mb-24 md:pt-40 pt-24">
             <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
-                    <h1 className="font-medium text-2xl lg:text-4xl">Cool Costume Collection!</h1>
+                    <h1 className="font-bold md:font-medium md:text-4xl text-3xl text-primary">Cool Costume Collection!</h1>
                     <p className="text-primary font-normal">Our clients are at the heart of everything we do. We pride ourselves on delivering personalized, top-notch service to meet their unique needs. <br />
                         From individuals to organizations, our commitment to excellence ensures their events are truly unforgettable.</p>
                 </div>
             </div>
 
-            <div className="lg:grid lg:grid-cols-4 grid grid-cols-2 mt-12 gap-10 mb-10">
+            <div className="lg:grid lg:grid-cols-4 grid grid-cols-1 mt-12 md:gap-10 mb-10">
                 {costumes.map((costume) => (
                     <Card key={costume.id} title={costume.title} image={costume.image} />
                 ))}
             </div>
-            <div className="ml-6">
+            <div className="md:ml-6 ml-2">
                 <p className="text-primary font-normal text-2xl">Discover a wide variety of styles, <span className="text-gradient">from classic to contemporary,<br /> </span>
                     ensuring the perfect fit for your event!!!</p>
             </div>
