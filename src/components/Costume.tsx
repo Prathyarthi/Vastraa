@@ -1,4 +1,4 @@
-import img1 from "../assets/Copy of _M2A0279@1x.png"
+import img1 from "../assets/Frame 78@1x.png"
 import img2 from "../assets/Frame 91@1x.png"
 import img3 from "../assets/Frame 79.png"
 import img4 from "../assets/Frame 89@1x.png"
@@ -77,12 +77,12 @@ const costumes = [
 
 function Costume() {
     return (
-        <section id="costumes" className="min-h-screen md:mb-32 mb-24 md:pt-40 pt-24">
+        <section id="costumes" className="min-h-screen md:pt-40 pt-24 md:mt-12">
             <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
                     <h1 className="font-bold md:font-medium md:text-4xl text-3xl text-primary">Cool Costume Collection!</h1>
-                    <p className="text-primary font-normal">Our clients are at the heart of everything we do. We pride ourselves on delivering personalized, top-notch service to meet their unique needs. <br />
+                    <p className="text-base text-primary font-normal leading-[140%]">Our clients are at the heart of everything we do. We pride ourselves on delivering personalized, top-notch service to meet their unique needs. <br />
                         From individuals to organizations, our commitment to excellence ensures their events are truly unforgettable.</p>
                 </div>
             </div>

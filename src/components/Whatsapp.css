@@ -5,8 +5,8 @@
 
 .chatbot-toggler {
     position: fixed;
-    bottom: 30px;
-    right: 35px;
+    bottom: 20px;
+    right: 20px;
     outline: none;
     border: none;
     height: 50px;
@@ -147,12 +147,10 @@ header h2 {
 
 .chatbot .chat-input {
     display: flex;
-    gap: 5px;
     position: absolute;
     bottom: 0;
     width: 100%;
     background: #FBFFFE;
-    padding: 3px 20px;
 }
 
 .chat-input textarea {

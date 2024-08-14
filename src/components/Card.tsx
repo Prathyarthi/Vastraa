@@ -12,7 +12,7 @@ const Card = ({
                 <img
                     src={image}
                     alt="project_image"
-                    className="md:w-[250px] md:h-[250px]"
+                    className="md:w-[250px] md:h-[250px] h-[350px] w-[350px]"
                 />
             </div>
             <h1 className="font-medium lg:font-normal text-md mb-2 text-center py-4">

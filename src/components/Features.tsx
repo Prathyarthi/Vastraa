@@ -27,14 +27,14 @@ const features = [
 
 function Features() {
     return (
-        <section id="whyVastraa" className="h-[80vh] md:pt-40 pt-24">
+        <section id="whyVastraa" className="min-h-[80vh] md:pt-40 pt-24 md:mt-2">
             <div className="">
                 <div className="flex space-x-4">
                     <div className="bg-gradient lg:h-[110px] lg:min-w-[8px] min-w-[8px] border rounded-full h-48"></div>
                     <div className="flex flex-col">
                         <div className="space-y-4">
                             <h1 className="font-bold md:font-medium md:text-4xl text-3xl text-primary">Why Vastraa?</h1>
-                            <p className="text-[#1B1B1E] font-normal">Vastraa is more than just a costume provider; we are your partners in creating unforgettable experiences. <br /> Our extensive collection and personalized service ensure you find the perfect attire for any event.</p>
+                            <p className="text-base text-primary font-normal leading-[140%]">Vastraa is more than just a costume provider; we are your partners in creating unforgettable experiences. <br /> Our extensive collection and personalized service ensure you find the perfect attire for any event.</p>
                         </div>
                     </div>
                 </div>

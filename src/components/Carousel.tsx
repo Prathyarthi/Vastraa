@@ -44,7 +44,7 @@ const Carousel: FC<CarouselProps> = ({ images, delay = 2000 }) => {
     }, [delay]);
 
     return (
-        <div className="overflow-hidden rounded-[16px] w-[75%]">
+        <div className="overflow-hidden rounded-[16px] lg:w-[75%]">
             <div className="carousel flex" ref={carouselRef}>
                 {images.map((image) => (
                     <img key={image.id} src={image.image} alt={`Slide ${image.id}`} className="carousel-image" />
