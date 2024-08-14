@@ -8,6 +8,7 @@ import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Why from "./components/Why"
+import Whatsapp from "./components/Whatsapp"
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Event />
           <Features />
           <Why />
+          <Whatsapp />
         </div>
         <Footer />
       </BrowserRouter>

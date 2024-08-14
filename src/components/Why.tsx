@@ -24,13 +24,13 @@ const pics = [
 
 function Why() {
     return (
-        <section className="min-h-[80vh]">
+        <section className="min-h-[80vh] pt-24 mb-24">
             <div className="lg:grid lg:grid-cols-2 lg:gap-20">
                 <div className="flex space-x-4">
                     <div className="bg-gradient lg:h-[120px] lg:min-w-[8px] min-w-[8px] border rounded-full h-28"></div>
                     <div className="flex flex-col">
                         <div className="space-y-4">
-                            <h1 className="font-bold text-4xl text-primary">Team</h1>
+                            <h1 className="font-bold md:font-medium md:text-4xl text-3xl text-primary">Team</h1>
                             <p className="text-[#1B1B1E] font-medium">Expert Team with Dance and Art Backgrounds <br className="hidden lg:block" />
                                 Crafting Unique Costumes</p>
                         </div>

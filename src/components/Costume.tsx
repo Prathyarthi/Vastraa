@@ -20,7 +20,7 @@ const costumes = [
     },
     {
         id: 2,
-        title: "Japanese Kimono",
+        title: "Mythology Costumes",
         image: img2
     },
     {
