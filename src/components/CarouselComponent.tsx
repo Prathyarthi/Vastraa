@@ -1,4 +1,4 @@
-import { useEffect, useRef, FC } from 'react';
+import { useEffect, useRef, FC, useState } from 'react';
 import '../components/carousal.css';
 
 interface Image {
@@ -13,6 +13,7 @@ interface CarouselProps {
 
 const CarouselComponent: FC<CarouselProps> = ({ images, delay = 2000 }) => {
     const carouselRef = useRef<HTMLDivElement | null>(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
         const carousel = carouselRef.current;
@@ -27,6 +28,7 @@ const CarouselComponent: FC<CarouselProps> = ({ images, delay = 2000 }) => {
                 start = timestamp;
                 if (carousel) {
                     carousel.appendChild(carousel.firstElementChild!);
+                    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
                     carousel.style.transition = 'none';
                     carousel.style.transform = 'translateX(0)';
                     requestAnimationFrame(() => {
@@ -48,6 +50,16 @@ const CarouselComponent: FC<CarouselProps> = ({ images, delay = 2000 }) => {
             <div className="carousel" ref={carouselRef}>
                 {images.map((image) => (
                     <img key={image.id} src={image.image} alt={`Slide ${image.id}`} className="carousel-image" />
+                ))}
+            </div>
+
+            <div className="flex space-x-5 mt-10 justify-center">
+                {images.map((_, index) => (
+                    <button
+                        key={index}
+                        className={`rounded-full w-3 h-3 ${index === currentIndex ? "bg-gradient" : "bg-gray-300"
+                            }`}
+                    />
                 ))}
             </div>
         </div>

@@ -33,9 +33,9 @@ function Footer() {
                                 </a>
                             </div>
                             <div className='lg:flex space-x-3 hidden'>
-                                <a href="https://www.facebook.com/vastraacostumes" target='_blank'><img className='w-[50px]' src="/public/facebook.svg" alt="facebook" /></a>
-                                <a href="https://www.instagram.com/vastraacostumes/" target='_blank'><img className='w-[50px]' src="/public/instagram.svg" alt="instagram" /></a>
-                                <a href="" target='_blank'><img className='w-[50px]' src="/public/linkedIn.svg" alt="" /></a>
+                                <a href="https://www.facebook.com/vastraacostumes" target='_blank'><img className='w-[50px]' src="/facebook.svg" alt="facebook" /></a>
+                                <a href="https://www.instagram.com/vastraacostumes/" target='_blank'><img className='w-[50px]' src="/instagram.svg" alt="instagram" /></a>
+                                <a href="" target='_blank'><img className='w-[50px]' src="/linkedIn.svg" alt="" /></a>
                             </div>
                         </div>
                         <div className='flex flex-col space-y-5 col-span-3'>
@@ -51,9 +51,9 @@ function Footer() {
                             </div>
 
                             <div className='flex space-x-3 md:hidden'>
-                                <a href="https://www.facebook.com/vastraacostumes" target='_blank'><img className='w-[50px]' src="/public/facebook.svg" alt="facebook" /></a>
-                                <a href="https://www.instagram.com/vastraacostumes/" target='_blank'><img className='w-[50px]' src="/public/instagram.svg" alt="instagram" /></a>
-                                <a href="" target='_blank'><img className='w-[50px]' src="/public/linkedIn.svg" alt="" /></a>
+                                <a href="https://www.facebook.com/vastraacostumes" target='_blank'><img className='w-[50px]' src="/facebook.svg" alt="facebook" /></a>
+                                <a href="https://www.instagram.com/vastraacostumes/" target='_blank'><img className='w-[50px]' src="/instagram.svg" alt="instagram" /></a>
+                                <a href="" target='_blank'><img className='w-[50px]' src="/linkedIn.svg" alt="" /></a>
                             </div>
                         </div>
                     </div>

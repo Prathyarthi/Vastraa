@@ -9,6 +9,7 @@ import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Why from "./components/Why"
 import Whatsapp from "./components/Whatsapp"
+import Blogs from "./components/Blogs"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Event />
           <Features />
           <Why />
+          <Blogs />
           <Whatsapp />
         </div>
         <Footer />

@@ -20,7 +20,7 @@ const Whatsapp: React.FC = () => {
                 {isChatbotVisible ? (
                     <span><MessageCircleX className='w-10 h-10 text-[#25D366]' /></span>
                 ) : (
-                    <img src="/public/whatsapp.svg" alt="whatsapp " />
+                    <img src="/whatsapp.svg" alt="whatsapp " />
                 )}
             </button>
             <div className="chatbot">
