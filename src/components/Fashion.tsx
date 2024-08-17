@@ -38,7 +38,7 @@ function Fashion() {
             <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[138px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
-                    <h1 className="font-bold md:font-medium md:text-4xl text-3xl text-primary">Fashion, <span className="text-gradient">Maternity, </span> Pre-Wedding, <span className="text-gradient">Bridal Collections</span> & More!</h1>
+                    <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">Fashion, <span className="text-gradient">Maternity, </span> Pre-Wedding, <span className="text-gradient">Bridal Collections</span> & More!</h1>
                     <p className="text-base text-primary font-normal leading-[140%]">Explore our extensive collection of costumes, including fashion, maternity, pre-wedding, and bridal wear. <br /> Find the perfect attire for every special occasion in one place.</p>
                 </div>
             </div>

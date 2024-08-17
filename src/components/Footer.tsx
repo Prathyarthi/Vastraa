@@ -13,11 +13,11 @@ function Footer() {
                     <div className='lg:flex lg:space-x-20 space-y-8 lg:space-y-0'>
                         <div className='md:flex space-x-20 hidden col-span-2'>
                             <div className='lg:flex lg:flex-col lg:space-y-7'>
-                                <Link to=""><p className='hover:text-gradient'>Costumes</p></Link>
-                                <Link to=""><p className='hover:text-gradient'>Event Management</p></Link>
-                                <Link to=""><p className='hover:text-gradient'>Why Vastraa?</p></Link>
-                                <Link to=""><p className='hover:text-gradient'>Team</p></Link>
-                                <Link to=""><p className='hover:text-gradient'>Blogs</p></Link>
+                                <a href="#costumes"><p className='hover:text-gradient'>Costumes</p></a>
+                                <a href="#events"><p className='hover:text-gradient'>Event Management</p></a>
+                                <a href="#whyVastraa"><p className='hover:text-gradient'>Why Vastraa?</p></a>
+                                <a href="#team"><p className='hover:text-gradient'>Team</p></a>
+                                <a href="#blogs"><p className='hover:text-gradient'>Blogs</p></a>
                             </div>
                         </div>
                         <div className='flex flex-col space-y-5 col-span-3'>

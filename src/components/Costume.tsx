@@ -81,7 +81,7 @@ function Costume() {
             <div className="flex space-x-6">
                 <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
                 <div className="space-y-4">
-                    <h1 className="font-bold md:font-medium md:text-4xl text-3xl text-primary">Cool Costume Collection!</h1>
+                    <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">Cool Costume Collection!</h1>
                     <p className="text-base text-primary font-normal leading-[140%]">Our clients are at the heart of everything we do. We pride ourselves on delivering personalized, top-notch service to meet their unique needs. <br />
                         From individuals to organizations, our commitment to excellence ensures their events are truly unforgettable.</p>
                 </div>

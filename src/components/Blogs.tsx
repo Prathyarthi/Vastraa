@@ -4,22 +4,78 @@ import blogimg2 from "../assets/blogImg2.png"
 import blogimg3 from "../assets/BlogImg3.png"
 import blogimg4 from "../assets/BlogImg4.png"
 import blogimg5 from "../assets/BlogImg5.png"
+import { useState } from "react"
+// import SideBlogs from "./SideBlogs"
+
+interface Blog {
+    id: number;
+    image: string;
+    date: string;
+    title: string;
+}
+
+const sideBlogs: Blog[] = [
+    {
+        id: 1,
+        image: blogimg1,
+        date: "15th August, 2024",
+        title: "Celebrate Krishna Janmashtami with Vastraa: Dress to Impress and Embrace the Divine Spirit"
+    },
+    {
+        id: 2,
+        image: blogimg2,
+        date: "15th August, 2024",
+        title: "Make Your Independence Day Celebration Unforgettable with Vastraa"
+    },
+    {
+        id: 3,
+        image: blogimg3,
+        date: "15th August, 2024",
+        title: "Celebrate Ganesh Chaturthi in Style: Stunning Costumes and Dance Performances to Honor Lord Ganesha"
+    },
+    {
+        id: 4,
+        image: blogimg4,
+        date: "15th August, 2024",
+        title: "Frightfully Fabulous: Transform Your Halloween Party with Vastraa’s Spooktacular Costumes and Decor"
+    },
+    {
+        id: 5,
+        image: blogimg5,
+        date: "15th August, 2024",
+        title: "Spin into Joy: Elevate Your Garba Night with Vastraa’s Traditional Costumes and Dance Essentials"
+    },
+]
 
 function Blogs() {
+
+    const [mainBlog, setMainBlog] = useState(sideBlogs[0])
+    const [sideBlogsData, setSideBlogsData] = useState(sideBlogs.slice(1))
+
+    const handleClick = (clickedBlog: Blog) => {
+        const newMainBlog = clickedBlog;
+        const newSideBlogs = sideBlogsData.map((blog) =>
+            blog.id === clickedBlog.id ? mainBlog : blog
+        );
+
+        setMainBlog(newMainBlog);
+        setSideBlogsData(newSideBlogs);
+    };
+
     return (
         <section id="blogs" className="min-h-[80vh] md:pt-40 pt-24">
             <div className="flex justify-between">
-                <h1 className="font-bold md:font-medium md:text-4xl text-3xl text-primary">Blogs</h1>
+                <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">Blogs</h1>
                 <i><ArrowLeft /></i>
             </div>
-            <div className="lg:grid grid-cols-12 gap-2 mt-5">
-                <div className="col-span-7 flex flex-col space-y-7">
+            <div className="lg:grid grid-cols-12 gap-2 mt-5 space-y-10 lg:space-y-0">
+                <div className="col-span-7 flex flex-col space-y-7 justify-center">
                     <div className="space-y-3">
-                        <img src={blogimg1} alt="blogimg1" />
-                        <p className="text-[#555555] font-normal text-sm">15th August, 2024</p>
+                        <img src={mainBlog.image} alt="mainblogimg" />
+                        <p className="text-[#555555] font-normal text-sm">{mainBlog.date}</p>
                     </div>
                     <div className="space-y-3">
-                        <h1 className="font-bold md:font-semibold md:text-2xl text-xl text-primary">Celebrate Krishna Janmashtami with Vastraa: Dress to Impress and Embrace the Divine Spirit</h1>
+                        <h1 className="font-bold md:font-semibold md:text-2xl text-xl text-primary">{mainBlog.title}</h1>
                         <p className="text-base text-primary font-normal leading-[140%]">As we approach the divine celebration of Krishna’s birth, it’s the perfect time to infuse your festivities with an air of magic and tradition. At Vastraa, we specialize in turning every event into a memorable experience with our exceptional costumes and event services. This year, let us help you celebrate Krishna’s leela (divine play) in a way that’s as enchanting and vibrant as the festival itself.</p>
                     </div>
 
@@ -40,7 +96,7 @@ function Blogs() {
 
                     <div className="space-y-3">
                         <h3 className="font-bold md:font-semibold md:text-xl text-xl text-primary">Memorable Photography and Videography:</h3>
-                        <p className="text-base text-primary font-normal leading-[140%]">Capture the beauty and excitement of your Krishna celebration with our professional photography and videography services. <br /> className="text-base text-primary font-normal leading-[140%]" Our team ensures that every moment, from the elegant costumes to the joyous rituals, is preserved in high-quality imagery.</p>
+                        <p className="text-base text-primary font-normal leading-[140%]">Capture the beauty and excitement of your Krishna celebration with our professional photography and videography services. Our team ensures that every moment, from the elegant costumes to the joyous rituals, is preserved in high-quality imagery.</p>
                     </div>
 
                     <div className="space-y-3">
@@ -54,34 +110,34 @@ function Blogs() {
                             For more information and to start planning your extraordinary Krishna celebration with Vastraa, visit our website or contact our team today.</p>
                     </div>
                 </div>
-
-                <hr className="col-span-1 rotate-90" />
-
-                <div className="col-span-4 md:space-y-20">
-                    <div className="space-y-3">
-                        <img src={blogimg2} alt="blogimg1" />
-                        <p className="text-[#555555] font-normal text-sm">15th August, 2024</p>
-                        <p className="text-[#555555] font-normal text-sm">Make Your Independence Day Celebration Unforgettable with Vastraa</p>
-                    </div>
-                    <div className="space-y-3">
-                        <img src={blogimg3} alt="blogimg1" />
-                        <p className="text-[#555555] font-normal text-sm">15th August, 2024</p>
-                        <p className="text-[#555555] font-normal text-sm">Celebrate Ganesh Chaturthi in Style: Stunning Costumes and Dance Performances to Honor Lord Ganesha</p>
-                    </div>
-                    <div className="space-y-3">
-                        <img src={blogimg4} alt="blogimg1" />
-                        <p className="text-[#555555] font-normal text-sm">15th August, 2024</p>
-                        <p className="text-[#555555] font-normal text-sm">Frightfully Fabulous: Transform Your Halloween Party with Vastraa’s Spooktacular Costumes and Decor</p>
-                    </div>
-                    <div className="space-y-3">
-                        <img src={blogimg5} alt="blogimg1" />
-                        <p className="text-[#555555] font-normal text-sm">15th August, 2024</p>
-                        <p className="text-[#555555] font-normal text-sm">Spin into Joy: Elevate Your Garba Night with Vastraa’s Traditional Costumes and Dance Essentials</p>
-                    </div>
+                <div className="col-span-1 md:flex md:justify-center">
+                    <hr className="md:w-[1px] bg-gray-300 md:h-full md:my-auto " />
                 </div>
+
+                <SideBlogs sideBlogsData={sideBlogsData} handleClick={handleClick} />
             </div>
         </section>
     )
 }
 
 export default Blogs
+
+
+interface SideBlogsProps {
+    sideBlogsData: Blog[];
+    handleClick: (blog: Blog) => void;
+}
+
+function SideBlogs({ sideBlogsData, handleClick }: SideBlogsProps) {
+    return (
+        <div className="col-span-4 md:space-y-20 space-y-10">
+            {sideBlogsData.map((blog) => (
+                <div className="space-y-3 flex flex-col justify-center" key={blog.id}>
+                    <img src={blog.image} alt="blogimg1" onClick={() => handleClick(blog)} />
+                    <p className="text-[#555555] font-normal text-sm">{blog.date}</p>
+                    <p className="text-[#555555] font-normal text-sm">{blog.title}</p>
+                </div>
+            ))}
+        </div>
+    )
+}
