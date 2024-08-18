@@ -1,6 +1,5 @@
 import { MapPin } from 'lucide-react'
 import vastraaLogo from "../assets/footer_logo.png"
-import { Link } from 'react-router-dom'
 
 function Footer() {
     return (

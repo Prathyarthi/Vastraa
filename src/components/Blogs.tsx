@@ -5,7 +5,7 @@ import blogimg3 from "../assets/BlogImg3.png"
 import blogimg4 from "../assets/BlogImg4.png"
 import blogimg5 from "../assets/BlogImg5.png"
 import { useState } from "react"
-// import SideBlogs from "./SideBlogs"
+import { Link } from "react-router-dom"
 
 interface Blog {
     id: number;
@@ -66,7 +66,7 @@ function Blogs() {
         <section id="blogs" className="min-h-[80vh] md:pt-40 pt-24">
             <div className="flex justify-between">
                 <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">Blogs</h1>
-                <i><ArrowLeft /></i>
+                <Link to="/"><i className="cursor-pointer"><ArrowLeft /></i></Link>
             </div>
             <div className="lg:grid grid-cols-12 gap-2 mt-5 space-y-10 lg:space-y-0">
                 <div className="col-span-7 flex flex-col space-y-7 justify-center">
