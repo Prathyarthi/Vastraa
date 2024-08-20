@@ -63,7 +63,7 @@ function Blogs() {
     };
 
     return (
-        <section id="blogs" className="min-h-[80vh] md:pt-40 pt-24">
+        <section id="blogs" className="min-h-[80vh] md:pt-10 pt-10">
             <div className="flex justify-between">
                 <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">Blogs</h1>
                 <Link to="/"><i className="cursor-pointer"><ArrowLeft /></i></Link>
