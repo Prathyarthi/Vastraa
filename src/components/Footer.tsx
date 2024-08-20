@@ -1,5 +1,6 @@
 import { MapPin } from 'lucide-react'
 import vastraaLogo from "../assets/footer_logo.png"
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -16,7 +17,7 @@ function Footer() {
                                 <a href="#events"><p className='hover:text-gradient'>Event Management</p></a>
                                 <a href="#whyVastraa"><p className='hover:text-gradient'>Why Vastraa?</p></a>
                                 <a href="#team"><p className='hover:text-gradient'>Team</p></a>
-                                <a href="/blogs"><p className='hover:text-gradient'>Blogs</p></a>
+                                <Link to="/blogs"><p className='hover:text-gradient'>Blogs</p></Link>
                             </div>
                         </div>
                         <div className='flex flex-col space-y-5 col-span-3'>

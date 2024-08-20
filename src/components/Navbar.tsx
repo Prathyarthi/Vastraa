@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import vastraa_logo from '../assets/Vastraa_logo.svg'
 import { CgClose, CgMenuRight } from 'react-icons/cg'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -27,7 +28,7 @@ function Navbar() {
                                 <a href="#costumes" className='hover:text-gradient'>Costumes</a>
                                 <a href="#events" className='hover:text-gradient'>Events</a>
                                 <a href="#whyVastraa" className='hover:text-gradient'>Why Vastraa?</a>
-                                <a href="/blogs" className='hover:text-gradient'>Blogs</a>
+                                <Link to="/blogs" className='hover:text-gradient'>Blogs</Link>
                                 <a href="#contact" className='hover:text-gradient'>Contact</a>
                             </div>
                         </div>
