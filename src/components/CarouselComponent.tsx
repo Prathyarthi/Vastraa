@@ -57,7 +57,7 @@ const CarouselComponent: FC<CarouselProps> = ({ images, delay = 2000 }) => {
                 {images.map((_, index) => (
                     <button
                         key={index}
-                        className={`rounded-full w-3 h-3 ${index === currentIndex ? "bg-gradient" : "bg-gray-300"
+                        className={`rounded-full w-3 h-3 ${index === currentIndex ? "bg-gradient/50" : "bg-gray-300"
                             }`}
                     />
                 ))}

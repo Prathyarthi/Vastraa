@@ -23,10 +23,9 @@ const Whatsapp: React.FC = () => {
                     <img src="/whatsapp.svg" alt="whatsapp " />
                 )}
             </button>
-            <div className="chatbot">
+            <div className="chatbot md:w-[400px] md:m-0 md:h-[350px] w-[280px] h-[300px] m-[65px] md:rounded-[12px] rounded-lg">
                 <header className='bg-[#25D366] text-[#FBFFFE]'>
-                    <h2>Connect with us for <br /> Costumes and Events</h2>
-                    {/* <span className="close-btn material-symbols-outlined" onClick={handleToggleChatbot}>close</span> */}
+                    <h2 className='md:font-medium font-bold md:text-xl text-lg'>Connect with us for <br /> Costumes and Events</h2>
                 </header>
                 <ul className="chatbox">
                     <li className={`chat ${messages.type}`}>
@@ -36,7 +35,7 @@ const Whatsapp: React.FC = () => {
                 </ul>
                 <div className="chat-input">
                     <a rel="noreferrer" className='bg-[#25D366] font-normal text-white px-6 py-2 w-full lg:h-[48px] flex justify-center items-center md:text-xl text-lg' href="https://wa.me/919986178988" target='_blank'>
-                        <button className="">Click Here For Enquiry</button>
+                        <button className="h-10">Click Here For Enquiry</button>
                     </a>
                 </div>
             </div>
