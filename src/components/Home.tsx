@@ -5,7 +5,6 @@ import Fashion from "./Fashion"
 import Features from "./Features"
 import Hero from "./Hero"
 import Why from "./Why"
-import Whatsapp from "./Whatsapp"
 
 function Home() {
     return (
@@ -17,7 +16,6 @@ function Home() {
             <Event />
             <Features />
             <Why />
-            <Whatsapp />
         </div>
     )
 }

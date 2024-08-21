@@ -17,7 +17,8 @@ function Footer() {
                                 <a href="#events"><p className='hover:text-gradient'>Event Management</p></a>
                                 <a href="#whyVastraa"><p className='hover:text-gradient'>Why Vastraa?</p></a>
                                 <a href="#team"><p className='hover:text-gradient'>Team</p></a>
-                                <Link to="/blogs"><p className='hover:text-gradient'>Blogs</p></Link>
+                                <Link to="/blogs" onClick={() => window.scrollTo(0, 0)}><p className='hover:text-gradient'>Blogs</p>
+                                </Link>
                             </div>
                         </div>
                         <div className='flex flex-col space-y-5 col-span-3'>
