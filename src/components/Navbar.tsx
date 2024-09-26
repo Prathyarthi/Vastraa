@@ -42,13 +42,20 @@ function Navbar() {
                 </div>
 
                 <button className="md:hidden relative" onClick={handleClick}>
-                    {isOpen ? <CgClose className='text-2xl' /> : <CgMenuRight className='text-2xl' />}
+                    {isOpen ? <CgClose className='text-[32px]' /> : <CgMenuRight className='text-[32px]' />}
                 </button>
 
                 {isOpen ? <>
                     <div className='md:hidden w-full fixed right-0 font-semibold'>
                         <div className='h-48 mt-5 text-end absolute flex flex-col items-end w-full'>
                             <div className='bg-[#FBFFFE] flex flex-col p-[24px] rounded-lg space-y-4 font-semibold'>
+                                <Link
+                                    to="/#hero"
+                                    onClick={() => handleLinkClick('hero')}
+                                    className={linkClasses('hero')}
+                                >
+                                    Home
+                                </Link>
                                 <Link
                                     to="/#costumes"
                                     onClick={() => handleLinkClick('costumes')}
@@ -89,6 +96,13 @@ function Navbar() {
                     </div>
                 </> :
                     <div className="hidden md:block space-x-6 font-normal">
+                        <Link
+                            to="/#hero"
+                            onClick={() => handleLinkClick('hero')}
+                            className={linkClasses('hero')}
+                        >
+                            Home
+                        </Link>
                         <Link
                             to="/#costumes"
                             onClick={() => handleLinkClick('costumes')}

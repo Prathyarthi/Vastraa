@@ -4,7 +4,7 @@ import Event from "./Event"
 import Fashion from "./Fashion"
 import Features from "./Features"
 import Hero from "./Hero"
-import Why from "./Why"
+import Team from "./Team"
 
 function Home() {
     return (
@@ -15,7 +15,7 @@ function Home() {
             <Fashion />
             <Event />
             <Features />
-            <Why />
+            <Team />
         </div>
     )
 }

@@ -1,7 +1,7 @@
-import img1 from "../assets/Frame 79@1x.png"
-import img2 from "../assets/Frame 80@1x.png"
-import img3 from "../assets/Frame 81@1x.png"
-import img4 from "../assets/Frame 82@1x.png"
+import img1 from "../assets/Frame 171@1x.png"
+import img2 from "../assets/Frame 175@1x.png"
+import img3 from "../assets/Frame 174@1x.png"
+import img4 from "../assets/Frame 172@1x.png"
 
 const pics = [
     {
@@ -22,7 +22,7 @@ const pics = [
     }
 ]
 
-function Why() {
+function Team() {
     return (
         <section id="#team" className="min-h-[80vh] md:pt-24 pt-24">
             <div className="lg:grid lg:grid-cols-2 lg:gap-20">
@@ -57,4 +57,4 @@ function Why() {
     )
 }
 
-export default Why
+export default Team
