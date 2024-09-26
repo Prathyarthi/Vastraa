@@ -11,6 +11,11 @@ function Footer() {
                         <img src={vastraaLogo} alt="vastraa_logo" className='lg:w-[130px] w-[100px]' />
                     </div>
                     <div className='lg:flex lg:space-x-20 space-y-8 lg:space-y-0'>
+                        <div className='lg:flex flex-col items-center space-y-2 hidden'>
+                            <a href="https://www.facebook.com/vastraacostumes" target='_blank'><img className='w-[50px]' src="/facebook.svg" alt="facebook" /></a>
+                            <a href="https://www.instagram.com/vastraacostumes/" target='_blank'><img className='w-[50px]' src="/instagram.svg" alt="instagram" /></a>
+                            <a href="" target='_blank'><img className='w-[50px]' src="/linkedIn.svg" alt="linkedIn" /></a>
+                        </div>
                         <div className='md:flex space-x-20 hidden col-span-2'>
                             <div className='lg:flex lg:flex-col lg:space-y-7'>
                                 <a href="#costumes"><p className='hover:text-gradient'>Costumes</p></a>
@@ -32,11 +37,6 @@ function Footer() {
                                 <p className='font-bold flex flex-col text-[14px]'>+91-9986178988</p>
                                 <a href='' className='cursor-pointer'>vastraaevents@gmail.com
                                 </a>
-                            </div>
-                            <div className='lg:flex space-x-3 hidden'>
-                                <a href="https://www.facebook.com/vastraacostumes" target='_blank'><img className='w-[50px]' src="/facebook.svg" alt="facebook" /></a>
-                                <a href="https://www.instagram.com/vastraacostumes/" target='_blank'><img className='w-[50px]' src="/instagram.svg" alt="instagram" /></a>
-                                <a href="" target='_blank'><img className='w-[50px]' src="/linkedIn.svg" alt="" /></a>
                             </div>
                         </div>
                         <div className='flex flex-col space-y-5 col-span-3'>
