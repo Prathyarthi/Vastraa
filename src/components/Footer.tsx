@@ -9,6 +9,10 @@ function Footer() {
                 <div className='lg:flex space-y-8 lg:space-y-0 justify-between'>
                     <div className='hidden md:block col-span-4'>
                         <img src={vastraaLogo} alt="vastraa_logo" className='lg:w-[130px] w-[100px]' />
+
+                        <div className='pt-5'>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d308.6555004909462!2d77.58361858441181!3d12.933331278119814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15b504aca34b%3A0x19c69ea8046898c!2sVastraa%20Costumes%20Jayanagar!5e1!3m2!1sen!2sin!4v1727372412427!5m2!1sen!2sin" width="150" height="150" style={{ border: "0" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Vastraa"></iframe>
+                        </div>
                     </div>
                     <div className='lg:flex lg:space-x-20 space-y-8 lg:space-y-0'>
                         <div className='lg:flex flex-col items-center space-y-2 hidden'>
