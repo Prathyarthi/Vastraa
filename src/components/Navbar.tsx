@@ -49,13 +49,13 @@ function Navbar() {
                     <div className='md:hidden w-full fixed right-0 font-semibold'>
                         <div className='h-48 mt-5 text-end absolute flex flex-col items-end w-full'>
                             <div className='bg-[#FBFFFE] flex flex-col p-[24px] rounded-lg space-y-4 font-semibold'>
-                                <Link
-                                    to="/#hero"
-                                    onClick={() => handleLinkClick('hero')}
-                                    className={linkClasses('hero')}
+                                <a
+                                    href="/"
+                                    onClick={() => handleLinkClick('/')}
+                                    className={linkClasses('/')}
                                 >
                                     Home
-                                </Link>
+                                </a>
                                 <Link
                                     to="/#costumes"
                                     onClick={() => handleLinkClick('costumes')}
@@ -96,13 +96,13 @@ function Navbar() {
                     </div>
                 </> :
                     <div className="hidden md:block space-x-6 font-normal">
-                        <Link
-                            to="/#hero"
-                            onClick={() => handleLinkClick('hero')}
-                            className={linkClasses('hero')}
+                        <a
+                            href="/"
+                            onClick={() => handleLinkClick('/')}
+                            className={linkClasses('/')}
                         >
                             Home
-                        </Link>
+                        </a>
                         <Link
                             to="/#costumes"
                             onClick={() => handleLinkClick('costumes')}
