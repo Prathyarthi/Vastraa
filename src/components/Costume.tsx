@@ -1,103 +1,82 @@
-import img1 from "../assets/Frame 78@1x.png"
-import img2 from "../assets/Frame 91@1x.png"
-import img3 from "../assets/Frame 79.png"
-import img4 from "../assets/Frame 89@1x.png"
-import img5 from "../assets/Frame 92@1x.png"
-import img6 from "../assets/Frame 90@1x.png"
-import img7 from "../assets/Frame 95@1x.png"
-import img8 from "../assets/Frame 94.png"
-import img9 from "../assets/Frame 94@1x.png"
-import img10 from "../assets/Frame 80.png"
-import img11 from "../assets/Frame 88@1x.png"
-import img12 from "../assets/Frame 82.png"
-import Card from "./Card"
+import img13 from "../assets/newcostumes/Frame 181@1x.png";
+import img14 from "../assets/newcostumes/Frame 182@1x.png";
+import img15 from "../assets/newcostumes/Frame 183@1x.png";
+import img16 from "../assets/newcostumes/Frame 184@1x.png";
+import img17 from "../assets/newcostumes/Frame 185@1x.png";
+import img18 from "../assets/newcostumes/Frame 186@1x.png";
+import img20 from "../assets/newcostumes/Frame 188@1x.png";
+import img22 from "../assets/newcostumes/Frame 190@1x.png";
+import Card from "./Card";
 
 const costumes = [
-    {
-        id: 1,
-        title: "Character Costumes",
-        image: img1
-    },
-    {
-        id: 2,
-        title: "Mythology Costumes",
-        image: img2
-    },
-    {
-        id: 3,
-        title: "Yakshgana",
-        image: img3
-    },
-    {
-        id: 4,
-        title: "Indian Army",
-        image: img4
-    },
-    {
-        id: 5,
-        title: "Demon Costumes",
-        image: img5
-    },
-    {
-        id: 6,
-        title: "Folk Costumes",
-        image: img6
-    },
-    {
-        id: 7,
-        title: "Historical Costumes",
-        image: img7
-    },
-    {
-        id: 8,
-        title: "Traditional Costumes",
-        image: img8
-    },
-    {
-        id: 9,
-        title: "Classical Costumes",
-        image: img9
-    },
-    {
-        id: 10,
-        title: "Egyptian Costume",
-        image: img10
-    },
-    {
-        id: 11,
-        title: "Spanish Costumes",
-        image: img11
-    },
-    {
-        id: 12,
-        title: "Chinese Costumes",
-        image: img12
-    },
-]
+  {
+    id: 12,
+    image: img13,
+  },
+  {
+    id: 13,
+    image: img14,
+  },
+  {
+    id: 14,
+    image: img15,
+  },
+  {
+    id: 15,
+    image: img16,
+  },
+  {
+    id: 16,
+    image: img17,
+  },
+  {
+    id: 17,
+    image: img18,
+  },
+  {
+    id: 19,
+    image: img20,
+  },
+  {
+    id: 21,
+    image: img22,
+  },
+];
 
 function Costume() {
-    return (
-        <section id="costumes" className="min-h-screen md:pt-40 pt-24 md:mt-12">
-            <div className="flex space-x-6">
-                <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
-                <div className="space-y-4">
-                    <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">Cool Costume Collection!</h1>
-                    <p className="text-base text-primary font-normal leading-[140%]">Our clients are at the heart of everything we do. We pride ourselves on delivering personalized, top-notch service to meet their unique needs. <br />
-                        From individuals to organizations, our commitment to excellence ensures their events are truly unforgettable.</p>
-                </div>
-            </div>
+  return (
+    <section id="costumes" className="min-h-screen md:pt-40 pt-24 md:mt-12">
+      <div className="flex space-x-6">
+        <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
+        <div className="space-y-4">
+          <h1 className="font-bold flex gap-2 md:font-semibold md:text-4xl text-3xl text-primary">
+            Cool <p className="text-gradient">Costume</p> Collection!
+          </h1>
+          <p className="text-base text-primary font-normal leading-[140%]">
+            Our clients are at the heart of everything we do. We pride ourselves
+            on delivering personalized, top-notch service to meet their unique
+            needs. <br />
+            From individuals to organizations, our commitment to excellence
+            ensures their events are truly unforgettable.
+          </p>
+        </div>
+      </div>
 
-            <div className="lg:grid lg:grid-cols-4 grid grid-cols-1 mt-12 md:gap-10 mb-10">
-                {costumes.map((costume) => (
-                    <Card key={costume.id} title={costume.title} image={costume.image} />
-                ))}
-            </div>
-            <div className="md:ml-6 ml-2">
-                <p className="text-primary font-normal text-2xl">Discover a wide variety of styles, <span className="text-gradient">from classic to contemporary,<br /> </span>
-                    ensuring the perfect fit for your event!!!</p>
-            </div>
-        </section>
-    )
+      <div className="lg:grid lg:grid-cols-3 grid grid-cols-1 mt-12 md:gap-6 mb-10">
+        {costumes.map((costume) => (
+          <Card key={costume.id} image={costume.image} />
+        ))}
+      </div>
+      <p className="text-primary font-normal text-2xl">
+        Discover a wide variety of styles,{" "}
+        <span className="text-gradient">
+          from classic to contemporary,
+          <br />{" "}
+        </span>
+        ensuring the perfect fit for your event!!!
+      </p>
+    </section>
+  );
 }
 
-export default Costume
+export default Costume;
