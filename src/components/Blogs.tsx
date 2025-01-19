@@ -1,9 +1,9 @@
 import { ArrowLeft } from "lucide-react";
-import blogimg1 from "../assets/BlogImg1.png";
-import blogimg2 from "../assets/BlogImg2.png";
-import blogimg3 from "../assets/BlogImg3.png";
-import blogimg4 from "../assets/BlogImg4.png";
-import blogimg5 from "../assets/BlogImg5.png";
+import blogimg1 from "../assets/blogsImages/BlogImg1.png";
+import blogimg2 from "../assets/blogsImages/BlogImg2.png";
+import blogimg3 from "../assets/blogsImages/BlogImg3.png";
+import blogimg4 from "../assets/blogsImages/BlogImg4.png";
+import blogimg5 from "../assets/blogsImages/BlogImg5.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ScrollArea, ScrollBar } from "./ui/scroll-area";

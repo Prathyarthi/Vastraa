@@ -1,45 +1,85 @@
-import img13 from "../assets/newcostumes/Frame 181@1x.png";
-import img14 from "../assets/newcostumes/Frame 182@1x.png";
-import img15 from "../assets/newcostumes/Frame 183@1x.png";
-import img16 from "../assets/newcostumes/Frame 184@1x.png";
-import img17 from "../assets/newcostumes/Frame 185@1x.png";
-import img18 from "../assets/newcostumes/Frame 186@1x.png";
-import img20 from "../assets/newcostumes/Frame 188@1x.png";
-import img22 from "../assets/newcostumes/Frame 190@1x.png";
+import img1 from "../assets/costumes/Frame 181@1x.png";
+import img2 from "../assets/costumes/Frame 182@1x.png";
+import img3 from "../assets/costumes/Frame 183@1x.png";
+import img4 from "../assets/costumes/Frame 184@1x.png";
+import img5 from "../assets/costumes/Frame 185@1x.png";
+import img6 from "../assets/costumes/Frame 186@1x.png";
+import img7 from "../assets/costumes/Frame 188@1x.png";
+import img8 from "../assets/costumes/Frame 190@1x.png";
+import img9 from "../assets/costumes/Frame 104.png";
+import img10 from "../assets/costumes/Frame 105.png";
+import img11 from "../assets/costumes/Frame 106.png";
+import img12 from "../assets/costumes/Frame 194@1x.png";
+import img13 from "../assets/costumes/Frame 191@1x.png";
+import img14 from "../assets/costumes/Frame 193@1x.png";
+import img15 from "../assets/costumes/Frame 189@1x.png";
+import img16 from "../assets/costumes/Frame 192@1x.png";
 import Card from "./Card";
 
 const costumes = [
   {
+    id: 1,
+    image: img1,
+  },
+  {
+    id: 2,
+    image: img2,
+  },
+  {
+    id: 3,
+    image: img3,
+  },
+  {
+    id: 4,
+    image: img4,
+  },
+  {
+    id: 5,
+    image: img5,
+  },
+  {
+    id: 6,
+    image: img6,
+  },
+  {
+    id: 7,
+    image: img7,
+  },
+  {
+    id: 8,
+    image: img8,
+  },
+  {
+    id: 9,
+    image: img9,
+  },
+  {
+    id: 10,
+    image: img10,
+  },
+  {
+    id: 11,
+    image: img11,
+  },
+  {
     id: 12,
-    image: img13,
+    image: img12,
   },
   {
     id: 13,
-    image: img14,
+    image: img13,
   },
   {
     id: 14,
-    image: img15,
+    image: img14,
   },
   {
     id: 15,
-    image: img16,
+    image: img15,
   },
   {
     id: 16,
-    image: img17,
-  },
-  {
-    id: 17,
-    image: img18,
-  },
-  {
-    id: 19,
-    image: img20,
-  },
-  {
-    id: 21,
-    image: img22,
+    image: img16,
   },
 ];
 

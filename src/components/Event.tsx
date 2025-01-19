@@ -1,8 +1,8 @@
-import frame1 from "../assets/Frame 69@1x.png"
-import frame2 from "../assets/Frame 75@1x.png"
-import frame3 from "../assets/Frame 76@1x.png"
-import frame4 from "../assets/Frame 77@1x.png"
-import frame5 from "../assets/Frame 73@1x.png"
+import frame1 from "../assets/eventSectionImages/Frame 69@1x.png"
+import frame2 from "../assets/eventSectionImages/Frame 75@1x.png"
+import frame3 from "../assets/eventSectionImages/Frame 76@1x.png"
+import frame4 from "../assets/eventSectionImages/Frame 77@1x.png"
+import frame5 from "../assets/eventSectionImages/Frame 73@1x.png"
 import CarouselComponent from "./CarouselComponent"
 
 const pics = [

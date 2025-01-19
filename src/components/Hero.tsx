@@ -1,15 +1,14 @@
-// import CarouselPlugin from "./Carousel"
 import Carousel from "./Carousel";
-import krishna from "../assets/Frame 127@1x.png";
-import animal from "../assets/Frame 125@1x.png";
-import disco from "../assets/Frame 126@1x.png";
-import freedom from "../assets/Frame 128@1x.png";
-import superhero from "../assets/Frame 129@1x.png";
-import retero from "../assets/Frame 130@1x.png";
-import halloween from "../assets/Frame 131@1x.png";
-import dance from "../assets/Frame 132@1x.png";
-import doctor from "../assets/Frame 133@1x.png";
-import classical from "../assets/Frame 136@1x.png";
+import krishna from "../assets/heroImages/Frame 127@1x.png";
+import animal from "../assets/heroImages/Frame 125@1x.png";
+import disco from "../assets/heroImages/Frame 126@1x.png";
+import freedom from "../assets/heroImages/Frame 128@1x.png";
+import superhero from "../assets/heroImages/Frame 129@1x.png";
+import retero from "../assets/heroImages/Frame 130@1x.png";
+import halloween from "../assets/heroImages/Frame 131@1x.png";
+import dance from "../assets/heroImages/Frame 132@1x.png";
+import doctor from "../assets/heroImages/Frame 133@1x.png";
+import classical from "../assets/heroImages/Frame 136@1x.png";
 
 import Banner from "./Banner";
 
