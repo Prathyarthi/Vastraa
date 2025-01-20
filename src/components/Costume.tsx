@@ -85,34 +85,42 @@ const costumes = [
 
 function Costume() {
   return (
-    <section id="costumes" className="min-h-screen md:pt-40 pt-24 md:mt-12">
-      <div className="flex space-x-6">
-        <div className="bg-gradient lg:h-[104px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
-        <div className="space-y-4">
-          <h1 className="font-bold flex gap-2 md:font-semibold md:text-4xl text-3xl text-primary">
-            Cool <p className="text-gradient">Costume</p> Collection!
+    <section
+      id="costumes"
+      className="min-h-screen py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8"
+    >
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+        <div className="bg-gradient h-24 sm:h-32 w-2 sm:min-w-[8px] rounded-full self-start"></div>
+
+        <div className="space-y-4 sm:space-y-6 max-w-3xl">
+          <h1 className="flex flex-wrap gap-2 text-2xl sm:text-3xl md:text-4xl font-bold sm:font-semibold text-primary">
+            Cool <span className="text-gradient">Costume</span> Collection!
           </h1>
-          <p className="text-base text-primary font-normal leading-[140%]">
+
+          <p className="text-base text-primary font-normal leading-relaxed">
             Our clients are at the heart of everything we do. We pride ourselves
             on delivering personalized, top-notch service to meet their unique
-            needs. <br />
+            needs.
+            <span className="hidden sm:inline">
+              <br />
+            </span>
             From individuals to organizations, our commitment to excellence
             ensures their events are truly unforgettable.
           </p>
         </div>
       </div>
 
-      <div className="lg:grid lg:grid-cols-3 grid grid-cols-1 mt-12 md:gap-6 mb-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 my-8 sm:my-12">
         {costumes.map((costume) => (
           <Card key={costume.id} image={costume.image} />
         ))}
       </div>
-      <p className="text-primary font-normal text-2xl">
+
+      <p className="text-primary font-normal text-lg sm:text-xl md:text-2xl text-center sm:text-left max-w-3xl">
         Discover a wide variety of styles,{" "}
-        <span className="text-gradient">
+        <span className="text-gradient block sm:inline">
           from classic to contemporary,
-          <br />{" "}
-        </span>
+        </span>{" "}
         ensuring the perfect fit for your event!!!
       </p>
     </section>
