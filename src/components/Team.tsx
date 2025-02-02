@@ -27,7 +27,7 @@ function Team() {
     <section id="#team" className="min-h-[80vh] md:pt-24 pt-24">
       <div className="lg:grid lg:grid-cols-2 lg:gap-20">
         <div className="flex space-x-4">
-          <div className="bg-gradient lg:h-[120px] lg:min-w-[8px] min-w-[8px] border rounded-full h-28"></div>
+          <div className="bg-gradient lg:h-[120px] lg:min-w-[8px] min-w-[8px] border rounded-full h-[98px]"></div>
           <div className="flex flex-col">
             <div className="space-y-4">
               <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">

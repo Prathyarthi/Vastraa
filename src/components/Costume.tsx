@@ -85,13 +85,9 @@ const costumes = [
 
 function Costume() {
   return (
-    <section
-      id="costumes"
-      className="min-h-screen py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8"
-    >
-      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-        <div className="bg-gradient h-24 sm:h-32 w-2 sm:min-w-[8px] rounded-full self-start"></div>
-
+    <section id="costumes" className="min-h-screen md:pt-40 pt-24">
+      <div className="flex space-x-4">
+        <div className="bg-gradient lg:h-[170px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
         <div className="space-y-4 sm:space-y-6 max-w-3xl">
           <h1 className="flex flex-wrap gap-2 text-2xl sm:text-3xl md:text-4xl font-bold sm:font-semibold text-primary">
             Cool <span className="text-gradient">Costume</span> Collection!
