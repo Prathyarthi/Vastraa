@@ -36,7 +36,7 @@ function Fashion() {
   return (
     <section className="min-h-[80vh] md:pt-40 pt-24">
       <div className="flex space-x-6">
-        <div className="bg-gradient lg:h-[138px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
+        <div className="bg-gradient lg:h-[110px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
         <div className="space-y-4">
           <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">
             Fashion, <span className="text-gradient">Maternity, </span>{" "}

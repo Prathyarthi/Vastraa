@@ -106,7 +106,7 @@ function Costume() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 my-8 sm:my-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center mx-auto sm:gap-6 lg:gap-8 my-8 sm:my-12">
         {costumes.map((costume) => (
           <Card key={costume.id} image={costume.image} />
         ))}
