@@ -4,7 +4,7 @@ import maternity from "../assets/fashionSectionImages/Maternity@1x.png";
 import graduation from "../assets/fashionSectionImages/Graduation@1x.png";
 import prewedding from "../assets/fashionSectionImages/Prewedding@1x.png";
 import jewellery from "../assets/fashionSectionImages/Jewellery set@1x.png";
-import CarouselComponent from "./CarouselComponent";
+import CarouselComponent from "../components/CarouselComponent";
 
 const pics = [
   {

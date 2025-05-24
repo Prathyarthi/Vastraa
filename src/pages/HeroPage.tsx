@@ -1,4 +1,4 @@
-import Carousel from "./Carousel";
+import Carousel from "../components/Carousel";
 import krishna from "../assets/heroImages/Frame 127@1x.png";
 import animal from "../assets/heroImages/Frame 125@1x.png";
 import disco from "../assets/heroImages/Frame 126@1x.png";
@@ -10,7 +10,7 @@ import dance from "../assets/heroImages/Frame 132@1x.png";
 import doctor from "../assets/heroImages/Frame 133@1x.png";
 import classical from "../assets/heroImages/Frame 136@1x.png";
 
-import Banner from "./Banner";
+import Banner from "../components/Banner";
 
 const pics = [
   {

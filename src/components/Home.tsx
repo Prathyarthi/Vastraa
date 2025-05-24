@@ -1,9 +1,9 @@
 import Client_section from "./Client_section";
-import Costume from "./Costume";
+import Costume from "../pages/CostumesPage";
 import Event from "./Event";
-import Fashion from "./Fashion";
+import Fashion from "../pages/FashionPage";
 import Features from "./Features";
-import Hero from "./Hero";
+import Hero from "../pages/HeroPage";
 import Team from "./Team";
 
 function Home() {

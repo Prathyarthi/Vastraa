@@ -3,9 +3,11 @@ import vastraaLogo from "../assets/footer_logo.png";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const date = new Date();
+
   return (
     <section id="contact" className="md:pt-40 pt-24">
-      <div className="bg-primary md:px-[150px] pt-5 px-[16px] pb-10 text-[#FBFFFE] lg:h-[400px] lg:place-content-center">
+      <div className="bg-primary md:px-[150px] px-[16px] text-[#FBFFFE] lg:h-[400px] lg:place-content-center">
         <div className="lg:flex space-y-8 lg:space-y-0 justify-between">
           <div className="hidden md:block col-span-4">
             <img
@@ -30,7 +32,7 @@ function Footer() {
           <div className="lg:flex lg:space-x-20 space-y-8 lg:space-y-0">
             <div className="lg:flex flex-col items-center space-y-2 hidden">
               <a
-                href="https://www.facebook.com/vastraacostumes"
+                href="https://www.facebook.com/vastraacostumes/"
                 target="_blank"
               >
                 <img className="w-[50px]" src="/facebook.svg" alt="facebook" />
@@ -140,6 +142,12 @@ function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="bg-primary w-full p-5 bottom-0 text-center">
+        <p className="text-secondary text-sm">
+          Copyright © {date.getFullYear()} Vastraa Costumes and Events. All
+          rights reserved.
+        </p>
       </div>
     </section>
   );
