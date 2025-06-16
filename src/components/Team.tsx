@@ -61,7 +61,7 @@ function Team() {
           </div>
         </div>
 
-        <div className="flex mt-10 lg:mt-0">
+        <div className="flex mt-10 lg:mt-0 place-content-end">
           <div className="grid grid-cols-2 gap-8">
             {pics.map((pic) => (
               <img src={pic.image} alt="" />

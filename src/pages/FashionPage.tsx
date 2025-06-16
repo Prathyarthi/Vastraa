@@ -34,29 +34,29 @@ const pics = [
 ];
 function Fashion() {
   return (
-    <section className="min-h-[80vh] md:pt-40 pt-24">
+    <section className="min-h-[80vh] pt-24 md:pt-40">
       <div className="flex space-x-6">
-        <div className="bg-gradient lg:h-[110px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
+        <div className="min-w-[8px] rounded-full border bg-gradient lg:h-[110px] lg:min-w-[8px]"></div>
         <div className="space-y-4">
-          <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">
+          <h1 className="text-3xl font-bold text-primary md:text-4xl md:font-semibold">
             Fashion, <span className="text-gradient">Maternity, </span>{" "}
             Pre-Wedding,{" "}
             <span className="text-gradient">Bridal Collections</span> & More!
           </h1>
-          <p className="text-base text-primary font-normal leading-[140%]">
+          <p className="text-base font-normal leading-[140%] text-primary">
             Explore our extensive collection of costumes, including fashion,
             maternity, pre-wedding, and bridal wear. <br /> Find the perfect
             attire for every special occasion in one place.
           </p>
         </div>
       </div>
-      <div className="lg:grid lg:grid-cols-2 mt-[30px] lg:justify-between flex flex-col px-5 lg:p-0">
+      <div className="mt-[30px] flex flex-col px-5 lg:grid lg:grid-cols-2 lg:justify-between lg:p-0">
         <div className="">
           <CarouselComponent images={pics} />
         </div>
 
-        <div className="mt-[30px] lg:ml-10 flex">
-          <ul className="space-y-4 text-base list-disc lg:ml-10 marker:text-gradient font-normal text-primary">
+        <div className="mt-[30px] flex lg:ml-10">
+          <ul className="list-disc space-y-4 text-base font-normal text-primary marker:text-gradient lg:ml-10">
             <li>
               <span className="text-gradient">Fashion Show Outfits:</span>{" "}
               Stylish and trendy outfits for the runway.

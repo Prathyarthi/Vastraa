@@ -1,4 +1,4 @@
-import Carousel from "../components/Carousel";
+
 import krishna from "../assets/heroImages/Frame 127@1x.png";
 import animal from "../assets/heroImages/Frame 125@1x.png";
 import disco from "../assets/heroImages/Frame 126@1x.png";
@@ -11,49 +11,9 @@ import doctor from "../assets/heroImages/Frame 133@1x.png";
 import classical from "../assets/heroImages/Frame 136@1x.png";
 
 import Banner from "../components/Banner";
+import HeroSectionBgCarousel from "@/components/heroSectionBgCarousal";
 
-const pics = [
-  {
-    id: 1,
-    image: krishna,
-  },
-  {
-    id: 2,
-    image: animal,
-  },
-  {
-    id: 3,
-    image: disco,
-  },
-  {
-    id: 4,
-    image: freedom,
-  },
-  {
-    id: 5,
-    image: superhero,
-  },
-  {
-    id: 6,
-    image: retero,
-  },
-  {
-    id: 7,
-    image: halloween,
-  },
-  {
-    id: 8,
-    image: dance,
-  },
-  {
-    id: 9,
-    image: doctor,
-  },
-  {
-    id: 10,
-    image: classical,
-  },
-];
+const pics = [krishna,animal,disco,freedom,superhero,retero,halloween,dance,doctor,classical];
 
 function Hero() {
   const handleClick = () => {
@@ -101,7 +61,11 @@ function Hero() {
         </div>
 
         <div className="lg:w-1/2 flex lg:justify-end justify-center mb-[30px]">
-          <Carousel images={pics} />
+<HeroSectionBgCarousel
+            className="-z-10 h-[400px] w-full max-w-[565px] rounded-2xl md:h-[500px] lg:h-[600px]"
+            images={pics}
+            interval={4000}
+          />
         </div>
       </div>
       <div className="w-full absolute bottom-0 hidden md:block">

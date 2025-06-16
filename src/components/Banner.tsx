@@ -1,7 +1,7 @@
 function Banner() {
   return (
-    <div className="bg-primary pt-8 pb-8 w-full flex justify-center items-center">
-      <p className="text-[#FBFFFE] font-medium text-center text-lg">
+    <div className="flex w-full items-center justify-center bg-primary pb-8 pt-8">
+      <p className="text-center text-lg font-medium text-[#FBFFFE]">
         Unforgettable Moments Start Here: Discover Vastraa's Magical Costumes
         for Every Event!
       </p>

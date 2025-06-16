@@ -44,8 +44,8 @@ const pics = [
 
 function Scroll_Client() {
   return (
-    <div className="w-full flex overflow-hidden group mt-10">
-      <div className="flex lg:space-x-8 space-x-8 w-full lg:justify-center lg:items-center animate-scroll group-hover:paused gap-x-8">
+    <div className="group mt-10 flex w-full overflow-hidden">
+      <div className="flex w-full animate-scroll gap-x-8 space-x-8 group-hover:paused lg:items-center lg:justify-center lg:space-x-8">
         {pics.map((pic) => (
           <img src={pic.image} alt="img" />
         ))}

@@ -30,16 +30,16 @@ const features = [
 
 function Features() {
   return (
-    <section id="whyVastraa" className="min-h-[80vh] md:pt-40 pt-24 md:mt-2">
+    <section id="whyVastraa" className="min-h-[80vh] pt-24 md:mt-2 md:pt-40">
       <div className="">
         <div className="flex space-x-4">
-          <div className="bg-gradient lg:h-[110px] lg:min-w-[8px] min-w-[8px] border rounded-full h-36"></div>
+          <div className="h-36 min-w-[8px] rounded-full border bg-gradient lg:h-[110px] lg:min-w-[8px]"></div>
           <div className="flex flex-col">
             <div className="space-y-4">
-              <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">
+              <h1 className="text-3xl font-bold text-primary md:text-4xl md:font-semibold">
                 Why Vastraa?
               </h1>
-              <p className="text-base text-primary font-normal leading-[140%]">
+              <p className="text-base font-normal leading-[140%] text-primary">
                 Vastraa is more than just a costume provider; we are your
                 partners in creating unforgettable experiences. <br /> Our
                 extensive collection and personalized service ensure you find
@@ -48,7 +48,7 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className="lg:flex gap-10 md:mx-auto items-center space-y-5 lg:space-y-0 mt-12">
+        <div className="mt-12 items-center gap-10 space-y-5 md:mx-auto lg:flex lg:space-y-0">
           {features.map((feature) => (
             <FeatureCard
               key={feature.title}

@@ -48,7 +48,7 @@ const CarouselComponent: FC<CarouselProps> = ({ images, delay = 2000 }) => {
   }, [delay]);
 
   return (
-    <div className="carousel-container rounded-[16px] w-[100%]">
+    <div className="carousel-container w-[100%] rounded-[16px]">
       <div className="carousel" ref={carouselRef}>
         {images.map((image) => (
           <img
@@ -60,11 +60,11 @@ const CarouselComponent: FC<CarouselProps> = ({ images, delay = 2000 }) => {
         ))}
       </div>
 
-      <div className="flex space-x-5 mt-10 justify-center">
+      <div className="mt-10 flex justify-center space-x-5">
         {images.map((_, index) => (
           <button
             key={index}
-            className={`rounded-full w-3 h-3 ${
+            className={`h-3 w-3 rounded-full ${
               index === currentIndex ? "bg-gradient/50" : "bg-gray-300"
             }`}
           />

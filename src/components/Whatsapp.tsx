@@ -19,15 +19,15 @@ const Whatsapp: React.FC = () => {
       <button className="chatbot-toggler" onClick={handleToggleChatbot}>
         {isChatbotVisible ? (
           <span>
-            <MessageCircleX className="w-10 h-10 text-[#25D366]" />
+            <MessageCircleX className="h-10 w-10 text-[#25D366]" />
           </span>
         ) : (
           <img src="/whatsapp.svg" alt="whatsapp " />
         )}
       </button>
-      <div className="chatbot md:w-[400px] md:m-0 md:h-[350px] w-[280px] h-[300px] m-[65px] md:rounded-[12px] rounded-lg">
+      <div className="chatbot m-[65px] h-[300px] w-[280px] rounded-lg md:m-0 md:h-[350px] md:w-[400px] md:rounded-[12px]">
         <header className="bg-[#25D366] text-[#FBFFFE]">
-          <h2 className="md:font-medium font-bold text-base">
+          <h2 className="text-base font-bold md:font-medium">
             Connect with us for <br /> Costumes and Events
           </h2>
         </header>
@@ -44,7 +44,7 @@ const Whatsapp: React.FC = () => {
         <div className="chat-input">
           <a
             rel="noreferrer"
-            className="bg-[#25D366] font-normal text-white px-6 py-2 w-full lg:h-[48px] flex justify-center items-center md:text-xl text-lg"
+            className="flex w-full items-center justify-center bg-[#25D366] px-6 py-2 text-lg font-normal text-white md:text-xl lg:h-[48px]"
             href="https://wa.me/919019558988"
             target="_blank"
           >

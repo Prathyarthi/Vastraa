@@ -8,7 +8,7 @@ import Team from "./Team";
 
 function Home() {
   return (
-    <div className="ml-[16px] mr-[16px] lg:ml-[150px] lg:mr-[150px] font-madeTommy bg-[#FBFFFE]">
+    <div className="ml-[16px] mr-[16px] bg-[#FBFFFE] font-madeTommy lg:ml-[150px] lg:mr-[150px]">
       <Hero />
       <Client_section />
       <Costume />

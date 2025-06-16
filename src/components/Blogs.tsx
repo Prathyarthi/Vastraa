@@ -252,7 +252,7 @@ function Blogs() {
   const handleClick = (clickedBlog: Blog) => {
     const newMainBlog = clickedBlog;
     const newSideBlogs = sideBlogsData.map((blog) =>
-      blog.id === clickedBlog.id ? mainBlog : blog
+      blog.id === clickedBlog.id ? mainBlog : blog,
     );
 
     setMainBlog(newMainBlog);
@@ -260,9 +260,9 @@ function Blogs() {
   };
 
   return (
-    <section id="blogs" className="min-h-[80vh] md:pt-10 pt-10">
+    <section id="blogs" className="min-h-[80vh] pt-10 md:pt-10">
       <div className="flex justify-between">
-        <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">
+        <h1 className="text-3xl font-bold text-primary md:text-4xl md:font-semibold">
           Blogs
         </h1>
         <Link to="/">
@@ -271,19 +271,19 @@ function Blogs() {
           </i>
         </Link>
       </div>
-      <div className="lg:grid grid-cols-12 gap-2 mt-5 space-y-10 lg:space-y-0">
+      <div className="mt-5 grid-cols-12 gap-2 space-y-10 lg:grid lg:space-y-0">
         <div className="col-span-7 flex flex-col space-y-7">
           <div className="space-y-3">
             <img src={mainBlog.image} alt="mainblogimg" />
-            <p className="text-[#555555] font-normal text-sm">
+            <p className="text-sm font-normal text-[#555555]">
               {mainBlog.date}
             </p>
           </div>
           <div className="space-y-3">
-            <h1 className="font-bold md:font-semibold md:text-2xl text-xl text-primary">
+            <h1 className="text-xl font-bold text-primary md:text-2xl md:font-semibold">
               {mainBlog.title}
             </h1>
-            <p className="text-base text-primary font-normal leading-[140%]">
+            <p className="text-base font-normal leading-[140%] text-primary">
               {mainBlog.title_paragraph}
             </p>
           </div>
@@ -292,10 +292,10 @@ function Blogs() {
             <div className="space-y-8">
               {mainBlog.content.map((content) => (
                 <div className="space-y-3">
-                  <h3 className="font-bold md:font-semibold md:text-xl text-xl text-primary">
+                  <h3 className="text-xl font-bold text-primary md:text-xl md:font-semibold">
                     {content.title}
                   </h3>
-                  <p className="text-base text-primary font-normal leading-[140%]">
+                  <p className="text-base font-normal leading-[140%] text-primary">
                     {content.paragraph}
                   </p>
                 </div>
@@ -304,7 +304,7 @@ function Blogs() {
           </div>
         </div>
         <div className="col-span-1 md:flex md:justify-center">
-          <hr className="md:w-[1px] bg-gray-300 md:h-full md:my-auto " />
+          <hr className="bg-gray-300 md:my-auto md:h-full md:w-[1px]" />
         </div>
 
         <SideBlogs sideBlogsData={sideBlogsData} handleClick={handleClick} />
@@ -322,17 +322,17 @@ interface SideBlogsProps {
 
 function SideBlogs({ sideBlogsData, handleClick }: SideBlogsProps) {
   return (
-    <ScrollArea className="col-span-4 md:space-y-20 space-y-10 h-auto rounded-lg m-0">
+    <ScrollArea className="col-span-4 m-0 h-auto space-y-10 rounded-lg md:space-y-20">
       <div className="p-4">
         {sideBlogsData.map((blog) => (
-          <div className="space-y-3 flex flex-col justify-center" key={blog.id}>
+          <div className="flex flex-col justify-center space-y-3" key={blog.id}>
             <img
               src={blog.image}
               alt="blogimg1"
               onClick={() => handleClick(blog)}
             />
-            <p className="text-[#555555] font-normal text-sm">{blog.date}</p>
-            <p className="text-[#555555] font-normal text-sm">{blog.title}</p>
+            <p className="text-sm font-normal text-[#555555]">{blog.date}</p>
+            <p className="text-sm font-normal text-[#555555]">{blog.title}</p>
           </div>
         ))}
       </div>

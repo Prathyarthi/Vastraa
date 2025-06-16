@@ -85,15 +85,15 @@ const costumes = [
 
 function Costume() {
   return (
-    <section id="costumes" className="min-h-screen md:pt-40 pt-24">
+    <section id="costumes" className="min-h-screen pt-24 md:pt-40">
       <div className="flex space-x-4">
-        <div className="bg-gradient lg:h-[170px] lg:min-w-[8px] min-w-[8px] border rounded-full"></div>
-        <div className="space-y-4 sm:space-y-6 max-w-3xl">
-          <h1 className="flex flex-wrap gap-2 text-2xl sm:text-3xl md:text-4xl font-bold sm:font-semibold text-primary">
+        <div className="min-w-[8px] rounded-full border bg-gradient lg:h-[170px] lg:min-w-[8px]"></div>
+        <div className="max-w-3xl space-y-4 sm:space-y-6">
+          <h1 className="flex flex-wrap gap-2 text-2xl font-bold text-primary sm:text-3xl sm:font-semibold md:text-4xl">
             Cool <span className="text-gradient">Costume</span> Collection!
           </h1>
 
-          <p className="text-base text-primary font-normal leading-relaxed">
+          <p className="text-base font-normal leading-relaxed text-primary">
             Our clients are at the heart of everything we do. We pride ourselves
             on delivering personalized, top-notch service to meet their unique
             needs.
@@ -106,15 +106,15 @@ function Costume() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center mx-auto sm:gap-6 lg:gap-8 my-8 sm:my-12">
+      <div className="mx-auto my-8 grid grid-cols-1 place-items-center gap-4 sm:my-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8">
         {costumes.map((costume) => (
           <Card key={costume.id} image={costume.image} />
         ))}
       </div>
 
-      <p className="text-primary font-normal text-lg sm:text-xl md:text-2xl text-center sm:text-left max-w-3xl">
+      <p className="max-w-3xl text-center text-lg font-normal text-primary sm:text-left sm:text-xl md:text-2xl">
         Discover a wide variety of styles,{" "}
-        <span className="text-gradient block sm:inline">
+        <span className="block text-gradient sm:inline">
           from classic to contemporary,
         </span>{" "}
         ensuring the perfect fit for your event!!!

@@ -34,15 +34,15 @@ function Navbar() {
     link === activeLink ? "text-gradient" : "hover:text-gradient";
 
   return (
-    <nav className="sticky top-0 z-20 border-b md:px-[150px] px-4 lg:ml-0 lg:mr-0 bg-[#FBFFFE] font-madeTommy">
-      <div className="flex py-3 justify-between items-center w-full">
+    <nav className="sticky top-0 z-20 border-b bg-[#FBFFFE] px-4 font-madeTommy md:px-[150px] lg:ml-0 lg:mr-0">
+      <div className="flex w-full items-center justify-between py-3">
         <div>
           <a href="/">
             <img src={vastraa_logo} alt="Vastraa Logo" />
           </a>
         </div>
 
-        <button className="md:hidden relative" onClick={handleClick}>
+        <button className="relative md:hidden" onClick={handleClick}>
           {isOpen ? (
             <CgClose className="text-[32px]" />
           ) : (
@@ -52,9 +52,9 @@ function Navbar() {
 
         {isOpen ? (
           <>
-            <div className="md:hidden w-full fixed right-0 font-semibold">
-              <div className="h-48 mt-5 text-end absolute flex flex-col items-end w-full">
-                <div className="bg-[#FBFFFE] flex flex-col p-[24px] rounded-lg space-y-4 font-semibold">
+            <div className="fixed right-0 w-full font-semibold md:hidden">
+              <div className="absolute mt-5 flex h-48 w-full flex-col items-end text-end">
+                <div className="flex flex-col space-y-4 rounded-lg bg-[#FBFFFE] p-[24px] font-semibold">
                   <a
                     href="/"
                     onClick={() => handleLinkClick("/")}
@@ -102,7 +102,7 @@ function Navbar() {
             </div>
           </>
         ) : (
-          <div className="hidden md:block space-x-6 font-normal">
+          <div className="hidden space-x-6 font-normal md:block">
             <a
               href="/"
               onClick={() => handleLinkClick("/")}

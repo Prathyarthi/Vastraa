@@ -6,14 +6,14 @@ function Footer() {
   const date = new Date();
 
   return (
-    <section id="contact" className="md:pt-40 pt-24">
-      <div className="bg-primary md:px-[150px] px-[16px] text-[#FBFFFE] lg:h-[400px] lg:place-content-center">
-        <div className="lg:flex space-y-8 lg:space-y-0 justify-between">
-          <div className="hidden md:block col-span-4">
+    <section id="contact" className="pt-24 md:pt-40">
+      <div className="bg-primary px-[16px] text-[#FBFFFE] md:px-[150px] lg:h-[400px] lg:place-content-center">
+        <div className="justify-between space-y-8 lg:flex lg:space-y-0">
+          <div className="col-span-4 hidden md:block">
             <img
               src={vastraaLogo}
               alt="vastraa_logo"
-              className="lg:w-[130px] w-[100px]"
+              className="w-[100px] lg:w-[130px]"
             />
 
             <div className="pt-5">
@@ -29,8 +29,8 @@ function Footer() {
               ></iframe>
             </div>
           </div>
-          <div className="lg:flex lg:space-x-20 space-y-8 lg:space-y-0">
-            <div className="lg:flex flex-col items-center space-y-2 hidden">
+          <div className="space-y-8 lg:flex lg:space-x-20 lg:space-y-0">
+            <div className="hidden flex-col items-center space-y-2 lg:flex">
               <a
                 href="https://www.facebook.com/vastraacostumes/"
                 target="_blank"
@@ -51,7 +51,7 @@ function Footer() {
                 <img className="w-[50px]" src="/linkedIn.svg" alt="linkedIn" />
               </a>
             </div>
-            <div className="md:flex space-x-20 hidden col-span-2">
+            <div className="col-span-2 hidden space-x-20 md:flex">
               <div className="lg:flex lg:flex-col lg:space-y-7">
                 <a href="#costumes">
                   <p className="hover:text-gradient">Costumes</p>
@@ -70,10 +70,10 @@ function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col space-y-5 col-span-3">
-              <div className="flex space-x-2 items-center">
+            <div className="col-span-3 flex flex-col space-y-5">
+              <div className="flex items-center space-x-2">
                 {<MapPin className="text-[#00AC47]" />}
-                <h2 className="text-[#FFFFFF] md:font-semibold font-bold lg:text-2xl">
+                <h2 className="font-bold text-[#FFFFFF] md:font-semibold lg:text-2xl">
                   Jayanagar
                 </h2>
               </div>
@@ -84,7 +84,7 @@ function Footer() {
                 560011
               </p>
               <div>
-                <p className="font-bold flex flex-col text-[14px]">
+                <p className="flex flex-col text-[14px] font-bold">
                   +91-9986178988
                 </p>
                 <a href="" className="cursor-pointer">
@@ -92,10 +92,10 @@ function Footer() {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col space-y-5 col-span-3">
-              <div className="flex space-x-2 items-center">
+            <div className="col-span-3 flex flex-col space-y-5">
+              <div className="flex items-center space-x-2">
                 {<MapPin className="text-[#00AC47]" />}
-                <h2 className="text-[#FFFFFF] md:font-semibold font-bold lg:text-2xl">
+                <h2 className="font-bold text-[#FFFFFF] md:font-semibold lg:text-2xl">
                   Whitefiled
                 </h2>
               </div>
@@ -106,7 +106,7 @@ function Footer() {
                 <br /> 560066
               </p>
               <div>
-                <p className="flex flex-col font-bold text-[14px]">
+                <p className="flex flex-col text-[14px] font-bold">
                   +91-9986178988
                 </p>
                 <a href="" className="cursor-pointer">
@@ -143,8 +143,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-primary w-full p-5 bottom-0 text-center">
-        <p className="text-secondary text-sm">
+      <div className="bottom-0 w-full bg-primary p-5 text-center">
+        <p className="text-sm text-secondary">
           Copyright © {date.getFullYear()} Vastraa Costumes and Events. All
           rights reserved.
         </p>
