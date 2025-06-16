@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <section id="contact" className="pt-24 md:pt-40">
-      <div className="bg-primary px-[16px] text-[#FBFFFE] md:px-[150px] lg:h-[400px] lg:place-content-center">
+      <div className="bg-primary px-[16px] pt-4 text-[#FBFFFE] md:px-[150px] md:pt-0 lg:h-[400px] lg:place-content-center">
         <div className="justify-between space-y-8 lg:flex lg:space-y-0">
           <div className="col-span-4 hidden md:block">
             <img
@@ -143,10 +143,19 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bottom-0 w-full bg-primary p-5 text-center">
+      <div className="bottom-0 flex w-full flex-col items-center justify-between bg-primary p-5 px-4 text-center md:px-36">
         <p className="text-sm text-secondary">
           Copyright © {date.getFullYear()} Vastraa Costumes and Events. All
           rights reserved.
+        </p>
+        <p className="text-sm text-secondary">
+          Designed & Developed{" "}
+          <a
+            className="hover:underline hover:underline-offset-2"
+            href="https://pixelcrew.in"
+          >
+            PIXELCREW
+          </a>
         </p>
       </div>
     </section>
