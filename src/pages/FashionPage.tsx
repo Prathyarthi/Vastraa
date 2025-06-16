@@ -50,7 +50,7 @@ function Fashion() {
           </p>
         </div>
       </div>
-      <div className="mt-[30px] flex flex-col px-5 lg:grid lg:grid-cols-2 lg:justify-between lg:p-0">
+      <div className="mt-[30px] flex  px-5 lg:grid lg:grid-cols-2 lg:justify-between lg:p-0">
         <div className="">
           <CarouselComponent images={pics} />
         </div>

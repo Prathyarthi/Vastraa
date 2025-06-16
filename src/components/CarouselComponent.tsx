@@ -45,7 +45,7 @@ const CarouselComponent: FC<CarouselProps> = ({ images, delay = 2000 }) => {
     animationFrameId = requestAnimationFrame(animate);
 
     return () => cancelAnimationFrame(animationFrameId);
-  }, [delay]);
+  }, [delay, images.length]);
 
   return (
     <div className="carousel-container w-[100%] rounded-[16px]">

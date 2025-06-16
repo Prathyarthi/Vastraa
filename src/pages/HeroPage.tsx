@@ -1,4 +1,3 @@
-
 import krishna from "../assets/heroImages/Frame 127@1x.png";
 import animal from "../assets/heroImages/Frame 125@1x.png";
 import disco from "../assets/heroImages/Frame 126@1x.png";
@@ -11,9 +10,20 @@ import doctor from "../assets/heroImages/Frame 133@1x.png";
 import classical from "../assets/heroImages/Frame 136@1x.png";
 
 import Banner from "../components/Banner";
-import HeroSectionBgCarousel from "@/components/heroSectionBgCarousal";
+import Carousel from "@/components/Carousel";
 
-const pics = [krishna,animal,disco,freedom,superhero,retero,halloween,dance,doctor,classical];
+const pics = [
+  { id: 1, image: krishna, alt: "Krishna Costume" },
+  { id: 2, image: animal, alt: "Animal Costume" },
+  { id: 3, image: disco, alt: "Disco Costume" },
+  { id: 4, image: freedom, alt: "Freedom Costume" },
+  { id: 5, image: superhero, alt: "Superhero Costume" },
+  { id: 6, image: retero, alt: "Retro Costume" },
+  { id: 7, image: halloween, alt: "Halloween Costume" },
+  { id: 8, image: dance, alt: "Dance Costume" },
+  { id: 9, image: doctor, alt: "Doctor Costume" },
+  { id: 10, image: classical, alt: "Classical Costume" },
+];
 
 function Hero() {
   const handleClick = () => {
@@ -26,19 +36,19 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="lg:w-full lg:h-[80vh] lg:items-center lg:justify-center flex flex-col mt-5 lg:mt-0"
+      className="mt-5 flex flex-col lg:mt-0 lg:h-[80vh] lg:w-full lg:items-center lg:justify-center"
     >
-      <div className="flex lg:justify-between lg:flex-row flex-col-reverse w-full">
-        <div className="lg:w-1/2 flex flex-col lg:place-content-center space-y-4 font-normal lg:text-start text-center mt-5 lg:mt-0">
-          <h1 className="text-3xl lg:text-[36px] leading-[120%] font-normal">
+      <div className="flex w-full flex-col-reverse lg:flex-row lg:justify-between">
+        <div className="mt-5 flex flex-col space-y-4 text-center font-normal lg:mt-0 lg:w-1/2 lg:place-content-center lg:text-start">
+          <h1 className="text-3xl font-normal leading-[120%] lg:text-[36px]">
             Make Every Events <br /> Extraordinary with{" "}
-            <span className="text-gradient md:font-medium font-bold">
+            <span className="font-bold text-gradient md:font-medium">
               {" "}
               Vastraa's <br /> Costumes and Events!
             </span>
           </h1>
           <div>
-            <p className="text-[#1B1B1E] text-[16px] leading-[150%] font-[24px]">
+            <p className="text-[16px] font-[24px] leading-[150%] text-[#1B1B1E]">
               Transform your celebrations with Vastraa's exceptional{" "}
               <br className="hidden lg:block" /> costumes and event services.
               From grand weddings and <br className="hidden lg:block" /> themed
@@ -47,28 +57,24 @@ function Hero() {
               every occasion extraordinary.
             </p>
           </div>
-          <div className="flex space-x-4 justify-center lg:justify-start">
+          <div className="flex justify-center space-x-4 lg:justify-start">
             <button
               onClick={handleClick}
-              className="bg-gradient font-normal text-white px-6 py-2 rounded-lg w-[156px]"
+              className="w-[156px] rounded-lg bg-gradient px-6 py-2 font-normal text-white"
             >
               Costumes
             </button>
-            <button className="font-bold md:font-semibold text-[#1B1B1E] border-black border-2 px-6 py-2 rounded-lg w-[156px] hidden">
+            <button className="hidden w-[156px] rounded-lg border-2 border-black px-6 py-2 font-bold text-[#1B1B1E] md:font-semibold">
               Bulk Order?
             </button>
           </div>
         </div>
 
-        <div className="lg:w-1/2 flex lg:justify-end justify-center mb-[30px]">
-<HeroSectionBgCarousel
-            className="-z-10 h-[400px] w-full max-w-[565px] rounded-2xl md:h-[500px] lg:h-[600px]"
-            images={pics}
-            interval={4000}
-          />
+        <div className="mb-[30px] flex justify-center lg:w-1/2 lg:justify-end">
+          <Carousel images={pics} delay={3000} />
         </div>
       </div>
-      <div className="w-full absolute bottom-0 hidden md:block">
+      <div className="absolute bottom-0 hidden w-full md:block">
         <Banner />
       </div>
     </section>

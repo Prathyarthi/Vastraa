@@ -59,8 +59,8 @@ const Carousel: FC<CarouselProps> = ({ images, delay = 2000 }) => {
       </div>
       <div aria-hidden="true" className="relative">
         <div className="absolute -inset-x-64 bottom-0 bg-gradient-to-t from-white/100 pt-[30%]" />
-        <div className="absolute -inset-x-64 -top-32 right-12 rotate-90 bg-gradient-to-t from-white/100 pt-[30%]" />
-        <div className="absolute -inset-x-64 -top-32 left-12 -rotate-90 bg-gradient-to-t from-white/100 pt-[30%]" />
+        <div className="absolute -inset-x-64 -top-32 rotate-90 bg-gradient-to-t from-white/100 pt-[30%] sm:right-12 xl:right-52" />
+        <div className="absolute -inset-x-64 -top-32 -rotate-90 bg-gradient-to-t from-white/100 pt-[30%] sm:left-12 xl:left-52" />
       </div>
     </div>
   );
