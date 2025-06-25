@@ -51,6 +51,7 @@ function Hero() {
   // ];
 
   const words = [
+    "Celebration",
     "Wedding",
     "Birthday Party",
     "Graduation Day",
