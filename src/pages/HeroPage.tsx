@@ -11,6 +11,7 @@ import classical from "../assets/heroImages/Frame 136@1x.png";
 
 import Banner from "../components/Banner";
 import Carousel from "@/components/Carousel";
+import { FlipWords } from "@/components/ui/flip-words";
 
 const pics = [
   { id: 1, image: krishna, alt: "Krishna Costume" },
@@ -32,7 +33,30 @@ function Hero() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+  // const words = [
+  //   "Celebration",
+  //   "Occasion",
+  //   "Festivity",
+  //   "Gathering",
+  //   "Wedding",
+  //   "Ceremony",
+  //   "Party",
+  //   "Function",
+  //   "Festive Moment",
+  //   "Graduation Day",
+  //   "Theme Party",
+  //   "Cultural Festival",
+  //   "School Event",
+  // ];
 
+  const words = [
+    "Wedding",
+    "Birthday Party",
+    "Graduation Day",
+    "Cultural Festival",
+    "School Event",
+    "Theme Party",
+  ];
   return (
     <section
       id="hero"
@@ -41,7 +65,8 @@ function Hero() {
       <div className="flex w-full flex-col-reverse lg:flex-row lg:justify-between">
         <div className="mt-5 flex flex-col space-y-4 text-center font-normal lg:mt-0 lg:w-1/2 lg:place-content-center lg:text-start">
           <h1 className="text-3xl font-normal leading-[120%] lg:text-[36px]">
-            Make Every Events <br /> Extraordinary with{" "}
+            Make Every
+            <FlipWords words={words} /> <br /> Memorable with{" "}
             <span className="font-bold text-gradient md:font-medium">
               {" "}
               Vastraa's <br /> Costumes and Events!
