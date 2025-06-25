@@ -1,5 +1,5 @@
 import { BadgePercent, Shapes, Sparkles, Star } from "lucide-react";
-import FeatureCard from "./FeatureCard";
+import FeatureCard from "./cards/FeatureCard";
 
 const features = [
   {

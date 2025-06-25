@@ -1,8 +1,15 @@
-const Card = ({ image }: { image: string }) => {
+import { cn } from "@/lib/utils";
+
+const Card = ({ image, className }: { image: string; className?: string }) => {
   return (
-    <div className="flex max-w-sm flex-col items-center overflow-hidden">
+    <div
+      className={cn(
+        "flex w-full flex-col items-center overflow-hidden",
+        className,
+      )}
+    >
       <div className="overflow-hidden rounded-[16px]">
-        <img src={image} alt="project_image" />
+        <img src={image} alt="project_image" className="w-auto" />
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ import img13 from "../assets/costumes/Frame 191@1x.png";
 import img14 from "../assets/costumes/Frame 193@1x.png";
 import img15 from "../assets/costumes/Frame 189@1x.png";
 import img16 from "../assets/costumes/Frame 192@1x.png";
-import Card from "../components//cards/CostumeCard";
+import Card from "../components/cards/CostumeCard";
 
 const costumes = [
   {
