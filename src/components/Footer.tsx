@@ -1,6 +1,7 @@
 import { MapPin } from "lucide-react";
 import vastraaLogo from "../assets/footer_logo.png";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 
 function Footer() {
   const date = new Date();
@@ -31,43 +32,76 @@ function Footer() {
           </div>
           <div className="space-y-8 lg:flex lg:space-x-20 lg:space-y-0">
             <div className="hidden flex-col items-center space-y-2 lg:flex">
-              <a
+              <motion.a
                 href="https://www.facebook.com/vastraacostumes/"
                 target="_blank"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
                 <img className="w-[50px]" src="/facebook.svg" alt="facebook" />
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="https://www.instagram.com/vastraacostumes/"
                 target="_blank"
+                whileHover={{ scale: 1.1, rotate: -5 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
                 <img
                   className="w-[50px]"
                   src="/instagram.svg"
                   alt="instagram"
                 />
-              </a>
-              <a href="" target="_blank">
+              </motion.a>
+              <motion.a
+                href=""
+                target="_blank"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
                 <img className="w-[50px]" src="/linkedIn.svg" alt="linkedIn" />
-              </a>
+              </motion.a>
             </div>
             <div className="col-span-2 hidden space-x-20 md:flex">
               <div className="lg:flex lg:flex-col lg:space-y-7">
-                <a href="#costumes">
+                <motion.a
+                  href="#costumes"
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
                   <p className="hover:text-gradient">Costumes</p>
-                </a>
-                <a href="#events">
+                </motion.a>
+                <motion.a
+                  href="#events"
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
                   <p className="hover:text-gradient">Event Management</p>
-                </a>
-                <a href="#whyVastraa">
+                </motion.a>
+                <motion.a
+                  href="#whyVastraa"
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
                   <p className="hover:text-gradient">Why Vastraa?</p>
-                </a>
-                <a href="#team">
+                </motion.a>
+                <motion.a
+                  href="#team"
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
                   <p className="hover:text-gradient">Team</p>
-                </a>
-                <Link to="/blogs" onClick={() => window.scrollTo(0, 0)}>
-                  <p className="hover:text-gradient">Blogs</p>
-                </Link>
+                </motion.a>
+                <motion.div
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <Link to="/blogs" onClick={() => window.scrollTo(0, 0)}>
+                    <p className="hover:text-gradient">Blogs</p>
+                  </Link>
+                </motion.div>
               </div>
             </div>
             <div className="col-span-3 flex flex-col space-y-5">
@@ -115,29 +149,41 @@ function Footer() {
               </div>
 
               <div className="flex space-x-3 md:hidden">
-                <a
+                <motion.a
                   href="https://www.facebook.com/vastraacostumes"
                   target="_blank"
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <img
                     className="w-[50px]"
                     src="/facebook.svg"
                     alt="facebook"
                   />
-                </a>
-                <a
+                </motion.a>
+                <motion.a
                   href="https://www.instagram.com/vastraacostumes/"
                   target="_blank"
+                  whileHover={{ scale: 1.1, rotate: -5 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <img
                     className="w-[50px]"
                     src="/instagram.svg"
                     alt="instagram"
                   />
-                </a>
-                <a href="" target="_blank">
+                </motion.a>
+                <motion.a
+                  href=""
+                  target="_blank"
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
                   <img className="w-[50px]" src="/linkedIn.svg" alt="" />
-                </a>
+                </motion.a>
               </div>
             </div>
           </div>

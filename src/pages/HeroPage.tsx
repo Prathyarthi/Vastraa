@@ -12,6 +12,7 @@ import classical from "../assets/heroImages/Frame 136@1x.png";
 import Banner from "../components/Banner";
 import Carousel from "@/components/Carousel";
 import { FlipWords } from "@/components/ui/flip-words";
+import { motion } from "motion/react";
 
 const pics = [
   { id: 1, image: krishna, alt: "Krishna Costume" },
@@ -83,15 +84,29 @@ function Hero() {
             </p>
           </div>
           <div className="flex justify-center space-x-4 lg:justify-start">
-            <button
+            <motion.button
               onClick={handleClick}
               className="w-[156px] rounded-lg bg-gradient px-6 py-2 font-normal text-white"
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 8px 25px rgba(147, 51, 234, 0.3)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               Costumes
-            </button>
-            <button className="hidden w-[156px] rounded-lg border-2 border-black px-6 py-2 font-bold text-[#1B1B1E] md:font-semibold">
+            </motion.button>
+            <motion.button
+              className="hidden w-[156px] rounded-lg border-2 border-black px-6 py-2 font-bold text-[#1B1B1E] md:font-semibold"
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               Bulk Order?
-            </button>
+            </motion.button>
           </div>
         </div>
 

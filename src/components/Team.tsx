@@ -2,6 +2,7 @@ import img1 from "../assets/teamImages/Frame 171@1x.png";
 import img2 from "../assets/teamImages/Frame 175@1x.png";
 import img3 from "../assets/teamImages/Frame 174@1x.png";
 import img4 from "../assets/teamImages/Frame 172@1x.png";
+import { motion } from "motion/react";
 
 const pics = [
   {
@@ -24,16 +25,16 @@ const pics = [
 
 function Team() {
   return (
-    <section id="#team" className="min-h-[80vh] md:pt-24 pt-24">
+    <section id="#team" className="min-h-[80vh] pt-24 md:pt-24">
       <div className="lg:grid lg:grid-cols-2 lg:gap-20">
         <div className="flex space-x-4">
-          <div className="bg-gradient lg:h-[120px] lg:min-w-[8px] min-w-[8px] border rounded-full h-[98px]"></div>
+          <div className="h-[98px] min-w-[8px] rounded-full border bg-gradient lg:h-[120px] lg:min-w-[8px]"></div>
           <div className="flex flex-col">
             <div className="space-y-4">
-              <h1 className="font-bold md:font-semibold md:text-4xl text-3xl text-primary">
+              <h1 className="text-3xl font-bold text-primary md:text-4xl md:font-semibold">
                 Team
               </h1>
-              <p className="text-base text-primary font-normal leading-[140%]">
+              <p className="text-base font-normal leading-[140%] text-primary">
                 Expert Team with Dance and Art Backgrounds{" "}
                 <br className="hidden lg:block" />
                 Crafting Unique Costumes
@@ -61,10 +62,21 @@ function Team() {
           </div>
         </div>
 
-        <div className="flex mt-10 lg:mt-0 place-content-end">
+        <div className="mt-10 flex place-content-end lg:mt-0">
           <div className="grid grid-cols-2 gap-8">
-            {pics.map((pic) => (
-              <img src={pic.image} alt="" />
+            {pics.map((pic, index) => (
+              <motion.img
+                key={pic.id}
+                src={pic.image}
+                alt={`Team member ${index + 1}`}
+                whileHover={{
+                  scale: 1.05,
+                  y: -5,
+                  boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
+                }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="overflow-hidden rounded-lg"
+              />
             ))}
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { useEffect, useRef, FC, useState } from "react";
 import "../components/carousal.css";
+import { motion } from "motion/react";
 
 interface Image {
   id: number;
@@ -48,29 +49,38 @@ const CarouselComponent: FC<CarouselProps> = ({ images, delay = 2000 }) => {
   }, [delay, images.length]);
 
   return (
-    <div className="carousel-container w-[100%] rounded-[16px]">
+    <motion.div
+      className="carousel-container w-[100%] rounded-[16px]"
+      whileHover={{ scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    >
       <div className="carousel" ref={carouselRef}>
         {images.map((image) => (
-          <img
+          <motion.img
             key={image.id}
             src={image.image}
             alt={`Slide ${image.id}`}
             className="carousel-image"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
           />
         ))}
       </div>
 
       <div className="mt-10 flex justify-center space-x-5">
         {images.map((_, index) => (
-          <button
+          <motion.button
             key={index}
             className={`h-3 w-3 rounded-full ${
               index === currentIndex ? "bg-gradient/50" : "bg-gray-300"
             }`}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

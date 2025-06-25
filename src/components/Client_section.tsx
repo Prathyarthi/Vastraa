@@ -6,6 +6,7 @@ import img5 from "../assets/clientSectionImages/Sanjay-Ghodawat-International-Sc
 import img6 from "../assets/clientSectionImages/snis-logo1@1x.png";
 import img7 from "../assets/clientSectionImages/logo.png@1x.png";
 import img8 from "../assets/clientSectionImages/logo@1x.png";
+import { motion } from "motion/react";
 
 const pics = [
   {
@@ -78,14 +79,14 @@ function Client_section() {
   return (
     <section
       id="#clients"
-      className="lg:w-full flex-col mt-16 lg:mt-0 lg:relative"
+      className="mt-16 flex-col lg:relative lg:mt-0 lg:w-full"
     >
-      <div className="w-full mt-20">
-        <div className="flex justify-center flex-col text-center space-y-2">
-          <h1 className="text-primary font-semibold text-3xl lg:mt-32">
+      <div className="mt-20 w-full">
+        <div className="flex flex-col justify-center space-y-2 text-center">
+          <h1 className="text-3xl font-semibold text-primary lg:mt-32">
             Our Clients
           </h1>
-          <p className="text-primary font-normal">
+          <p className="font-normal text-primary">
             Our clients are at the heart of everything we do. We pride ourselves
             on delivering personalized, top-notch service to meet their unique
             needs. <br />
@@ -95,10 +96,19 @@ function Client_section() {
         </div>
       </div>
 
-      <div className="w-full flex overflow-hidden lg:space-x-8 group lg:mx-[20px] mt-10">
-        <div className="flex lg:space-x-8 space-x-8 w-full lg:justify-center lg:items-center animate-scroll group-hover:paused gap-x-8">
-          {pics.map((pic) => (
-            <img src={pic.image} alt="img" />
+      <div className="group mt-10 flex w-full overflow-hidden lg:mx-[20px] lg:space-x-8">
+        <div className="flex w-full animate-scroll gap-x-8 space-x-8 group-hover:paused lg:items-center lg:justify-center lg:space-x-8">
+          {pics.map((pic, index) => (
+            <motion.img
+              key={`${pic.id}-${index}`}
+              src={pic.image}
+              alt="client logo"
+              whileHover={{
+                scale: 1.1,
+                filter: "brightness(1.1)",
+              }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            />
           ))}
         </div>
       </div>

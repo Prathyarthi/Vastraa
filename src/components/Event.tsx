@@ -4,6 +4,7 @@ import frame3 from "../assets/eventSectionImages/Frame 76@1x.png";
 import frame4 from "../assets/eventSectionImages/Frame 77@1x.png";
 import frame5 from "../assets/eventSectionImages/Frame 73@1x.png";
 import CarouselComponent from "./CarouselComponent";
+import { motion } from "motion/react";
 
 const pics = [
   {
@@ -49,34 +50,56 @@ function Event() {
       <div className="mt-[30px] flex flex-col-reverse px-5 md:flex-col lg:grid lg:grid-cols-2 lg:justify-between lg:p-0">
         <div className="mt-4 flex">
           <ul className="list-disc space-y-4 text-base font-normal text-primary marker:text-gradient lg:ml-5 lg:mr-10">
-            <li>
+            <motion.li
+              whileHover={{ x: 5 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <span className="text-gradient">Sound and Lighting:</span>{" "}
               Professional audio and visual setups for an immersive experience.
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              whileHover={{ x: 5 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <span className="text-gradient">Wedding Planning:</span> From
               venue selection to decor, we handle every detail of your big day.
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              whileHover={{ x: 5 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <span className="text-gradient">Choreography:</span> Expert
               choreography services to make your events lively and entertaining.
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              whileHover={{ x: 5 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <span className="text-gradient">LED Walls:</span> High - quality
               LED walls for dynamic and engaging displays.
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              whileHover={{ x: 5 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <span className="text-gradient">Carnival Events:</span> Fun -
               filled carnival setups to create a festive atmosphere.
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              whileHover={{ x: 5 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               <span className="text-gradient">School Annual Day:</span> Fun -
               filled carnival setups to create a festive atmosphere.
-            </li>
-            <h2 className="-ml-5">
+            </motion.li>
+            <motion.h2
+              className="-ml-5"
+              whileHover={{ x: 5 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               Our expert team ensures a seamless and spectacular experience,
               turning your vision into reality and creating lasting memories.
-            </h2>
+            </motion.h2>
           </ul>
         </div>
 

@@ -1,4 +1,5 @@
 import { useEffect, useRef, FC } from "react";
+import { motion } from "motion/react";
 import "../components/carousal.css";
 
 interface Image {
@@ -30,7 +31,7 @@ const Carousel: FC<CarouselProps> = ({ images, delay = 2000 }) => {
           carousel.style.transition = "none";
           carousel.style.transform = "translateX(0)";
           requestAnimationFrame(() => {
-            carousel.style.transition = "transform 0.5s";
+            carousel.style.transition = "transform 0.5s ease-in-out";
             carousel.style.transform = `translateX(-${
               carousel.firstElementChild!.clientWidth
             }px)`;
@@ -46,14 +47,18 @@ const Carousel: FC<CarouselProps> = ({ images, delay = 2000 }) => {
   }, [delay]);
 
   return (
-    <div className="overflow-hidden rounded-[16px] lg:w-[75%]">
+    <motion.div
+      className="relative cursor-pointer overflow-hidden rounded-[16px] lg:w-[75%]"
+      whileHover={{ scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    >
       <div className="carousel flex" ref={carouselRef}>
         {images.map((image) => (
           <img
             key={image.id}
             src={image.image}
             alt={`Slide ${image.id}`}
-            className="carousel-image"
+            className="carousel-image transition-all duration-300 hover:brightness-110"
           />
         ))}
       </div>
@@ -62,7 +67,7 @@ const Carousel: FC<CarouselProps> = ({ images, delay = 2000 }) => {
         <div className="absolute -inset-x-64 -top-32 hidden rotate-90 bg-gradient-to-t from-white/100 pt-[30%] sm:right-12 md:block xl:right-52" />
         <div className="absolute -inset-x-64 -top-32 hidden -rotate-90 bg-gradient-to-t from-white/100 pt-[30%] sm:left-12 md:block xl:left-52" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
