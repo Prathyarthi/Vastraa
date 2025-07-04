@@ -45,7 +45,7 @@ function ScrollToTop() {
           }}
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 rounded-full bg-primary p-3 text-white shadow-lg transition-shadow duration-300 hover:shadow-xl"
+          className="fixed bottom-20 right-8 z-50 rounded-full bg-primary p-3 text-white shadow-lg transition-shadow duration-300 hover:shadow-xl"
           aria-label="Scroll to top"
         >
           <motion.div

@@ -96,13 +96,14 @@ function Client_section() {
         </div>
       </div>
 
-      <div className="group mt-10 flex w-full overflow-hidden lg:mx-[20px] lg:space-x-8">
-        <div className="flex w-full animate-scroll gap-x-8 space-x-8 group-hover:paused lg:items-center lg:justify-center lg:space-x-8">
+      <div className="group mt-10 flex w-full overflow-hidden px-4 sm:px-0 lg:mx-[20px] lg:space-x-8">
+        <div className="flex w-full animate-scroll gap-x-4 space-x-4 group-hover:paused sm:gap-x-8 sm:space-x-8 lg:items-center lg:justify-center lg:space-x-8">
           {pics.map((pic, index) => (
             <motion.img
               key={`${pic.id}-${index}`}
               src={pic.image}
               alt="client logo"
+              className="h-8 w-auto flex-shrink-0 object-contain sm:h-auto sm:w-auto"
               whileHover={{
                 scale: 1.1,
                 filter: "brightness(1.1)",
