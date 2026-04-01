@@ -119,7 +119,7 @@ function Footer() {
               </p>
               <div>
                 <p className="flex flex-col text-[14px] font-bold">
-                  +91-9986178988
+                  +91-9742205669
                 </p>
                 <a href="" className="cursor-pointer">
                   vastraaevents@gmail.com
@@ -141,7 +141,7 @@ function Footer() {
               </p>
               <div>
                 <p className="flex flex-col text-[14px] font-bold">
-                  +91-9986178988
+                  +91-97422 05669
                 </p>
                 <a href="" className="cursor-pointer">
                   vastraaevents@gmail.com
