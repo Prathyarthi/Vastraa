@@ -5,6 +5,7 @@ import Fashion from "../pages/FashionPage";
 import Features from "./Features";
 import Hero from "../pages/HeroPage";
 import Team from "./Team";
+import Testimonials from "./Testimonials";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Fashion />
       <Event />
       <Features />
+      <Testimonials />
       <Team />
     </div>
   );

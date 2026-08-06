@@ -115,6 +115,15 @@ function Hero() {
           <Carousel images={pics} delay={3000} />
         </div>
       </div>
+      <div className="mx-auto mt-8 aspect-[9/16] w-full max-w-[280px] overflow-hidden rounded-[16px] md:hidden">
+        <iframe
+          src="https://www.youtube.com/embed/Fvj4yn3jMpA"
+          title="Vastraa YouTube Short"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          className="h-full w-full border-0"
+        />
+      </div>
       <div className="absolute bottom-0 hidden w-full md:block">
         <Banner />
       </div>
