@@ -8,8 +8,8 @@ function Footer() {
 
   return (
     <section id="contact" className="pt-24 md:pt-40">
-      <div className="bg-primary px-[16px] pt-4 text-[#FBFFFE] md:px-[150px] md:pt-0 lg:h-[400px] lg:place-content-center">
-        <div className="justify-between space-y-8 lg:flex lg:space-y-0">
+      <div className="bg-primary px-[16px] py-8 text-[#FBFFFE] md:px-[150px] lg:min-h-[400px] lg:place-content-center lg:py-12">
+        <div className="justify-between space-y-8 lg:flex lg:space-y-0 lg:gap-8">
           <div className="col-span-4 hidden md:block">
             <img
               src={vastraaLogo}
@@ -138,6 +138,28 @@ function Footer() {
                 <br /> Whitefield, Dodsworth Layout,
                 <br /> Bengaluru, Karnataka
                 <br /> 560066
+              </p>
+              <div>
+                <p className="flex flex-col text-[14px] font-bold">
+                  +91-97422 05669
+                </p>
+                <a href="" className="cursor-pointer">
+                  vastraaevents@gmail.com
+                </a>
+              </div>
+            </div>
+            <div className="col-span-3 flex flex-col space-y-5">
+              <div className="flex items-center space-x-2">
+                {<MapPin className="text-[#00AC47]" />}
+                <h2 className="font-bold text-[#FFFFFF] md:font-semibold lg:text-2xl">
+                  Davanagere
+                </h2>
+              </div>
+              <p className="text-[14px]">
+                #463, 7th Cross, 8th Main,
+                <br /> P.J. Extension,
+                <br /> Davangere, Karnataka
+                <br /> 577002
               </p>
               <div>
                 <p className="flex flex-col text-[14px] font-bold">
