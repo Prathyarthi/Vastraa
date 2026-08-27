@@ -121,8 +121,8 @@ function Footer() {
                 <p className="flex flex-col text-[14px] font-bold">
                   +91-9742205669
                 </p>
-                <a href="" className="cursor-pointer">
-                  vastraaevents@gmail.com
+                <a href="mailto:Vastraacostumes@gmail.com" className="cursor-pointer">
+                  Vastraacostumes@gmail.com
                 </a>
               </div>
             </div>
@@ -143,8 +143,8 @@ function Footer() {
                 <p className="flex flex-col text-[14px] font-bold">
                   +91-97422 05669
                 </p>
-                <a href="" className="cursor-pointer">
-                  vastraaevents@gmail.com
+                <a href="mailto:Vastraacostumes@gmail.com" className="cursor-pointer">
+                  Vastraacostumes@gmail.com
                 </a>
               </div>
             </div>
@@ -165,8 +165,8 @@ function Footer() {
                 <p className="flex flex-col text-[14px] font-bold">
                   +91-97422 05669
                 </p>
-                <a href="" className="cursor-pointer">
-                  vastraaevents@gmail.com
+                <a href="mailto:Vastraacostumes@gmail.com" className="cursor-pointer">
+                  Vastraacostumes@gmail.com
                 </a>
               </div>
 
